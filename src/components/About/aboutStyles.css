@@ -1,3 +1,148 @@
-.about-container{
-    height:100vh
-}
+.about-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .about-container h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  
+  .about-container h2 span {
+    color: #ec7c28;
+  }
+  
+  .about-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 41px;
+    align-items: flex-start;
+  }
+  
+  .text-container {
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: start;
+  }
+  
+  .text-container p {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .text-container span {
+    color: #ec7c28;
+    font-weight: 600;
+  }
+  
+  .about-images {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    padding: 40px 0;
+    justify-content: center;
+  }
+  
+  .about-images::before,
+  .about-images::after {
+    content: "";
+    bottom: 20px;
+    position: absolute;
+    height: 2px;
+    background-color: #ec7c28;
+    width: calc(200px * 2 + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .about-images::before {
+    top: 0;
+  }
+  
+  .about-images::after {
+    bottom: 0;
+  }
+  
+  .about-images img:nth-child(2) {
+    transform: translateY(20px);
+  }
+  
+  .about-images img:nth-child(1) {
+    transform: translateY(-20px);
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .about-main-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-container,
+    .about-images {
+      width: 100%;
+    }
+  
+    .text-container p {
+      width: 90%;
+    }
+  
+    .about-images::before,
+    .about-images::after {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 30px 15px;
+    }
+  
+    .about-container h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  
+    .text-container {
+      font-size: 15px;
+    }
+  
+    .text-container p {
+      width: 100%;
+    }
+  
+    .about-images {
+      align-items: center;
+      gap: 15px;
+    }
+
+    .about-images {
+        padding:  0px;
+      }
+
+    .about-images img:nth-child(2) {
+      transform: translateY(-20px);
+    }
+
+    .about-images img:nth-child(1) {
+        transform: translateY(20px);
+      }
+  
+    .about-images::before,
+    .about-images::after {
+      display: none;
+    }
+  }
+  

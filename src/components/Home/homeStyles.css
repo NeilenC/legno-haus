@@ -2,7 +2,7 @@
   position: relative;
   background-color: black;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
 }
 
@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/house1.png");
+  background-image: url("/home2.jpg");
   background-size: cover;
   background-position: top-center;
   background-repeat: no-repeat;
@@ -23,21 +23,25 @@
 
 .home-text {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  top: 70%;
+  left: 5%;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 70px;
-  color: white;
+  color: rgba(248, 248, 248, 0.8);
+
   width: 100%;
   letter-spacing: 4px;
 }
 
 .home-text-p {
-  margin-left: 10%;
+  /* margin-left: 10%; */
+
+    font-size:46px
 }
 
 .home-text span {
-  color: var(--main-orange);
-  font-weight: 500;
+  color: rgba(0, 0, 0,  0.84);
+/* color: var(--main-orange); */
+  font-weight: 400;
 }

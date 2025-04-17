@@ -1,0 +1,246 @@
+.featured-models-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.f-models-main-container {
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: hidden;
+  background: #f7f6f7;
+}
+
+.featured-models-content-container {
+  width: 100%;
+  padding-inline: 15px;
+  margin: auto;
+}
+
+.featured-model-card-container {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+
+.featured-models-title {
+  /* font-size: 32px; */
+  font-size: clamp(25px, 1.3vw, 32px);
+
+  font-weight: 600;
+  padding-bottom: 2.5rem;
+  text-align: start;
+  width: 100%;
+  color: var(--background-brown-secondary);
+}
+
+.featured-models-description-container {
+  border: 1px solid #333;
+  width: clamp(280px, 25vw, 420px);
+  padding: 2rem 1.5rem;
+}
+
+.feature-models-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.feature-models-content-title {
+  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.feature-models-content h1 {
+  font-size: clamp(18px, 2vw, 24px);
+  padding-bottom: 1rem;
+  color: #896146;
+  text-align: left;
+}
+
+.feature-model-card-selected {
+  width: 605px;
+  height: 546px;
+}
+
+.featured-models-images-container {
+  position: relative;
+  width: auto;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid rgba(47, 44, 44, 1);
+  cursor: pointer;
+  background-color: rgba(84, 93, 71, 1);
+}
+
+.featured-models-images-container.expanded {
+  transition: none;
+
+  width: 36vw;
+  transition: width 0.8s ease;
+}
+
+.featured-models-images-container.adjacent {
+  width: 6vw;
+  transition: width 0.3s ease;
+}
+
+.featured-models-images-container.adjacent2 {
+  width: 7vw;
+  transition: width 0.3s ease;
+}
+
+.feature-models-house-description {
+  font-size: clamp(15px, 1.3vw, 16px);
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+.featured-models-images {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.4); /* Por defecto opaca */
+  transition: filter 0.4s ease;
+  z-index: 1;
+}
+
+.image-title-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparente si querés */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-title-overlay p {
+  color: white;
+  font-size: clamp(18px, 2vw, 28px);
+  text-align: center;
+  font-size: 10px;
+  padding: 0 10px;
+}
+
+.featured-models-images.expanded {
+}
+
+.toggle-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: var(--background-green-secondary);
+  color: var(--main-text);
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.featured-models-text-decoration {
+  background-color: #896146;
+  color: var(--main-text);
+  font-weight: 600;
+  border-radius: 1.25rem;
+  line-height: 1.75;
+  padding: 0.25rem 1.25rem;
+  width: fit-content;
+}
+
+.toggle-btn:hover {
+  background-color: var(--background-green-dark);
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 100vw !important;
+  color: var(--background-green-dark) !important;
+}
+
+.models-swipper {
+  height: 115% !important;
+  width: 100vw !important;
+  padding-right: 90px;
+}
+
+.swiper-slide {
+  width: 350px !important;
+}
+
+@media (max-width: 500px) {
+  .f-models-main-container {
+    height: 160vh;
+  }
+
+  .featured-model-card-container {
+    flex-direction: column;
+  }
+
+  .featured-model-card-container {
+    gap: 30px;
+  }
+  .featured-models-content-container {
+    margin-top: 50px;
+  }
+
+  .featured-models-description-container {
+    width: auto;
+    height: 280px;
+  }
+
+  .featured-models-text-decoration-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: clamp(12px, 1.1vw, 14px);
+  }
+
+  .featured-models-text-decoration-container {
+    padding-top: 24px;
+  }
+
+  .featured-models-text-decoration-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .featured-models-text-decoration-container p {
+    padding-bottom: 5px;
+  }
+
+  .feature-models-content-title {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+
+  .featured-models-title {
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .featured-models-images {
+    width: 100%;
+    height: 100%;
+    filter: none; /* Por defecto opaca */
+  }
+}
