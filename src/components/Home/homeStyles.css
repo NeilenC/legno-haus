@@ -10,9 +10,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/home2.jpg");
+  background-image: url("/home-background.jpeg"); 
   background-size: cover;
-  background-position: top-center;
+  background-position: 70%;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
@@ -41,7 +41,6 @@
 }
 
 .home-text span {
-  color: rgba(0, 0, 0,  0.84);
-/* color: var(--main-orange); */
+color: var(--main-orange);
   font-weight: 400;
 }

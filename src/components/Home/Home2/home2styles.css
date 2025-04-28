@@ -1,0 +1,171 @@
+/* Estilos generales */
+.contenedor-home {
+  background: #F5F5F5;
+  /* font-family: sans-serif; */
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  /* text-transform: uppercase; */
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-weight: semibold;
+  font-size: 12px;
+}
+
+.barra-navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.barra-navegacion li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.boton-login {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sección principal (hero) */
+.seccion-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 30px 40px;
+  gap: 10px;
+}
+.text {
+  max-width: 450px;
+  line-height: 130%;
+}
+
+.texto-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  flex: 1;
+  align-items: center;
+}
+
+.logo-leyenda{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  gap:20px;
+  justify-content: center;
+}
+
+.texto-hero h1 {
+  line-height: 140%;
+font-weight: 400;
+  font-size: 22px;
+  text-align:end;
+  align-items: center;
+  color: #262626;
+}
+
+.texto-hero h1 span{
+  color: var(--main-orange);
+  font-weight:500;
+}
+
+.texto-hero p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: end;
+}
+
+.botones-hero button {
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.botones-hero {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.botones-hero .primario {
+  background-color: black;
+  font-weight:600;
+  color: white;
+}
+
+.botones-hero .primario:hover {
+  background-color: var(--main-orange);
+}
+
+.botones-hero .secundario {
+  font-weight:600;
+  color: black;
+  border: 1px solid black;
+}
+
+.botones-hero .secundario:hover {
+  background-color: var(--main-green);
+  border: 1px solid var(--main-green);
+
+  color:white;
+}
+
+/* Imagen del hero */
+.imagen-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 460px;
+  min-height: 460px;
+
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .barra-navegacion {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .seccion-hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imagen-hero {
+    min-height: 200px;
+  }
+
+  .texto-hero h1 {
+    font-size: 22px;
+    text-align: center;
+    align-content: center;
+  }
+}
