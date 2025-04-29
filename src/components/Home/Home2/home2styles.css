@@ -1,171 +1,176 @@
-/* Estilos generales */
-.contenedor-home {
-  background: #F5F5F5;
-  /* font-family: sans-serif; */
+/* Variables de color */
+:root {
+  --primary-color: #ff7d00;
+  --secondary-color: #ffffff;
+  --text-color: #f5f5f5;
+  --dark-bg: rgba(0, 0, 0, 0.6);
 }
 
-/* Barra de navegación */
-.barra-navegacion {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: ;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-  /* text-transform: uppercase; */
-  border-bottom: 1px solid #ccc;
-}
-
-.logo {
-  font-weight: semibold;
-  font-size: 12px;
-}
-
-.barra-navegacion ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
+/* Reset y estilos base */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.barra-navegacion li a {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
+.main-container {
+  background: #000;
+  color: var(--text-color);
+  font-family: 'Montserrat', sans-serif;
 }
 
-.boton-login {
-  background: black;
-  color: white;
-  padding: 5px 10px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
+.contenedor-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("/home-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Sección principal (hero) */
+/* Sección hero */
 .seccion-hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 15px 30px 40px;
-  gap: 10px;
-}
-.text {
-  max-width: 450px;
-  line-height: 130%;
+  justify-content: center;
+  height: 100%;
+  padding: 0 5%;
+  position: relative;
 }
 
 .texto-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo-leyenda {
+  margin-bottom: 2rem;
+}
+
+.leyenda {
+  font-size: 4.5vw;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.leyenda span {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Botones CTA */
+.cta-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 100%;
-  flex: 1;
-  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
-.logo-leyenda{
-  display:flex;
-  flex-direction: row;
-  align-items:center;
-  gap:20px;
-  justify-content: center;
-}
-
-.texto-hero h1 {
-  line-height: 140%;
-font-weight: 400;
-  font-size: 22px;
-  text-align:end;
-  align-items: center;
-  color: #262626;
-}
-
-.texto-hero h1 span{
-  color: var(--main-orange);
-  font-weight:500;
-}
-
-.texto-hero p {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 15px;
-  text-align: end;
-}
-
-.botones-hero button {
-  padding: 8px 15px;
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   border: none;
   cursor: pointer;
-  font-size: 12px;
+  transition: all 0.3s ease;
 }
 
-.botones-hero {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: flex-end;
-  text-align: end;
-}
-
-.botones-hero .primario {
-  background-color: black;
-  font-weight:600;
+.cta-button {
+  background-color: var(--primary-color);
   color: white;
 }
 
-.botones-hero .primario:hover {
-  background-color: var(--main-orange);
+.cta-button.secondary {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
-.botones-hero .secundario {
-  font-weight:600;
-  color: black;
-  border: 1px solid black;
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.botones-hero .secundario:hover {
-  background-color: var(--main-green);
-  border: 1px solid var(--main-green);
-
-  color:white;
+.cta-button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Imagen del hero */
-.imagen-hero {
+/* Indicador de scroll */
+.scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-height: 460px;
-  min-height: 460px;
-
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
+  color: white;
+  /* opacity: 0.7; */
+  /* animation: bounce 2s infinite; */
 }
 
-/* Responsive para móviles */
+.scroll-indicator .line {
+  height: 40px;
+  width: 1px;
+  background-color: white;
+  margin-top: 0.5rem;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+/* Efectos modernos */
+.logo-leyenda h1 {
+  position: relative;
+}
+
+.logo-leyenda h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .barra-navegacion {
+  .leyenda {
+    font-size: 2rem;
+  }
+  
+  .cta-section {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    gap: 1rem;
   }
-
-  .seccion-hero {
-    flex-direction: column;
-    padding: 20px;
+  
+  .cta-button {
+    width: 100%;
   }
+}
 
-  .imagen-hero {
-    min-height: 200px;
+@media (max-width: 480px) {
+  .leyenda {
+    font-size: 1.8rem;
   }
-
-  .texto-hero h1 {
-    font-size: 22px;
-    text-align: center;
-    align-content: center;
+  
+  .logo-leyenda h1::after {
+    width: 60px;
   }
 }

@@ -41,7 +41,14 @@ const PorqueElegirnos = () => {
   return (
     <div className='f-models-main-container'>
       <div className='featured-models-content-container'>
-        <h1 className='featured-models-title'>¿ Por qué <span style={{fontWeight: 'bold',color: 'var(--main-orange)'}}>elegirnos</span> ?</h1>
+        {/* <h1 className='featured-models-title'>¿ Por qué <span style={{fontWeight: 'bold',color: 'var(--main-orange)'}}>elegirnos</span> ?</h1> */}
+        <div className='section-header'>
+          <h2 className='section-title'>
+            ¿Por qué <span className='highlight'>elegirnos</span>?
+          </h2>
+          <p className='section-subtitle'>Descubrí lo que nos hace diferentes</p>
+        </div>
+      
         <div className='featured-models-wrapper'>
           {brackpoint === 'mobile' ? (
             <Swiper

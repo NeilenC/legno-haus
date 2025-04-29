@@ -1,7 +1,7 @@
 // components/Proyectos.tsx
 import React from 'react';
 import Image from 'next/image';
-import './proyectos.css'; // Importamos el CSS normal
+import './proyectos.css';
 
 const items = [
   { title: 'Residencias', image: '/home.png' },
@@ -14,27 +14,40 @@ const items = [
 
 const Proyectos = () => {
   return (
-    <div id="proyectos" className='proyectos-section'>
-      <h1 className='proyectos-title'>Más que construir casas, en Legno Haus impulsamos un cambio: <br/>
-      hogares modernos, barrios revitalizados y un futuro más sustentable.</h1>
-      <div className="proyectos-container">
-
-      {items.map((item, index) => (
-        <div key={index} className="proyecto-item">
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={500}
-            height={400}
-            className="proyecto-image"
-            />
-          <div className="overlay">
-            <h3>{item.title}</h3>
-          </div>
-        </div>
-      ))}
-    </div>
+    <section id="proyectos" className='proyectos-section'>
+      <div className="section-header">
+        <h2 className='section-subtitle'>NUESTROS PROYECTOS</h2>
+        <h1 className='proyectos-title'>
+          Más que construir casas, <span>creamos legados</span>
+          <br />
+          Hogares modernos, barrios revitalizados
+          <br />
+          <span>y un futuro sustentable</span>
+        </h1>
       </div>
+      
+      <div className="proyectos-container">
+        {items.map((item, index) => (
+          <div key={index} className="proyecto-item">
+            <div className="image-wrapper">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={500}
+                height={400}
+                className="proyecto-image"
+              />
+            </div>
+            <div className="overlay">
+              <div className="overlay-content">
+                <h3>{item.title}</h3>
+                <button className="proyecto-btn">Ver proyecto</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

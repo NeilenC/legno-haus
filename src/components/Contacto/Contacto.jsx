@@ -4,42 +4,84 @@ import './contacto.css';
 
 const Contacto = () => {
   return (
-    <div className="contact-wrapper">
-      <div className="background-image" />
+    <section id='contacto' className="contact-section">
+      <div className="contact-container">
+        <div className="contact-hero">
+          <div className="hero-overlay"></div>
+          <div className="hero-content">
+            <h2 className="hero-title">
+              ¿Necesitas más de una<br />
+              <span className="hero-highlight">Legno Haus</span>?
+            </h2>
+            <p className="hero-subtitle">Déjanos tus datos y nos pondremos en contacto</p>
+          </div>
+        </div>
 
-      {/* Texto sobre la imagen */}
-      <div className="contact-text">
-        <h2>¿Necesitas más de una</h2>
-        <h2 className="highlight">Legno Hause?</h2>
+        <div className="contact-form-container">
+          <div className="form-header">
+            <h3 className="form-title">¡Hablemos!</h3>
+          </div>
+          
+          <form className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name">Nombre completo *</label>
+              <input 
+                type="text" 
+                id="name" 
+                required 
+                className="form-input"
+              />
+            </div>
+            
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="phone">Teléfono *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  required 
+                  className="form-input"
+                />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="email">Email *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  required 
+                  className="form-input"
+                />
+              </div>
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="schedule">Horario para contactarte *</label>
+              <input 
+                type="text" 
+                id="schedule" 
+                required 
+                className="form-input"
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="message">Mensaje</label>
+              <textarea 
+                id="message" 
+                rows={4} 
+                className="form-textarea"
+              ></textarea>
+            </div>
+            
+            <button type="submit" className="submit-btn">
+              Enviar consulta
+              <span className="arrow-icon">→</span>
+            </button>
+          </form>
+        </div>
       </div>
-
-      {/* Sección verde con formulario */}
-      <div className="contact-right">
-        <form className="contact-form">
-          <label>
-            Nombre completo *
-            <input type="text" required />
-          </label>
-          <label>
-            Teléfono *
-            <input type="tel" required />
-          </label>
-          <label>
-            Email *
-            <input type="email" required />
-          </label>
-          <label>
-            Horario para contactarte *
-            <input type="text" required />
-          </label>
-          <label>
-            Mensaje
-            <textarea rows={4}></textarea>
-          </label>
-          <button type="submit">Consultar</button>
-        </form>
-      </div>
-    </div>
+    </section>
   );
 };
 
