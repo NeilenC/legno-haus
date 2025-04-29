@@ -1,5 +1,4 @@
 import React from 'react';
-import './beneficios.css';
 
 const beneficios = [
   { label: "Rápido", icon: "⏱️", description: "Construcción en tiempo récord" },

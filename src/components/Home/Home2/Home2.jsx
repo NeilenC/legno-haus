@@ -1,4 +1,3 @@
-import "./home2styles.css";
 
 export default function HomeComponent2() {
   return (

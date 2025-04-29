@@ -1,5 +1,4 @@
 import React from "react";
-import "./aboutStyles.css";
 import Image from "next/image";
 
 const About = () => {

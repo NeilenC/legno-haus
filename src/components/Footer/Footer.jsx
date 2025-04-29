@@ -1,5 +1,4 @@
 import React from 'react';
-import './footer.css';
 import FacebookIcon from '@/commons/FacebookIcon';
 import InstagramIcon from '@/commons/InstagramIcon';
 

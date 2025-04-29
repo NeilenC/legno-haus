@@ -1,4 +1,3 @@
-import "./navbar2.css";
 
 const Navbar2 = () => {
   return (

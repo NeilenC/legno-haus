@@ -1,7 +1,6 @@
 // components/Proyectos.tsx
 import React from 'react';
 import Image from 'next/image';
-import './proyectos.css';
 
 const items = [
   { title: 'Residencias', image: '/home.png' },

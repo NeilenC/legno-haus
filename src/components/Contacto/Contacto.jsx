@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import './contacto.css';
 
 const Contacto = () => {
   return (
