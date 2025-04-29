@@ -10,19 +10,19 @@ const Navbar2 = () => {
       <nav>
         <ul>
           <li>
-            <a href="#">Proyectos</a>
+            <a href="#proyectos">Proyectos</a>
           </li>
           <li>
-            <a href="#">¿Quiénes somos?</a>
+            <a href="#quienes-somos">¿Quiénes somos?</a>
           </li>
           <li>
-            <a href="#">¿Por qué elegirnos?</a>
+            <a href="#porque-elegirnos">¿Por qué elegirnos?</a>
           </li>
           <li>
-            <a href="#">Beneficios</a>
+            <a href="#beneficios">Beneficios</a>
           </li>
           <li>
-            <a href="#">Contácto</a>
+            <a href="#contacto">Contácto</a>
           </li>
         </ul>
       </nav>

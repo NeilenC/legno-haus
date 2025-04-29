@@ -1,0 +1,69 @@
+.fixed-bg-component {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .fixed-bg-component::before {
+    content: '';
+    position: fixed;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-image: url('/middle.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+  
+  .fixed-bg-component::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .fixed-bg-content {
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .fixed-bg-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  
+  .fixed-bg-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .fixed-bg-title {
+      font-size: 2rem;
+    }
+    
+    .fixed-bg-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fixed-bg-title {
+      font-size: 1.5rem;
+    }
+  }

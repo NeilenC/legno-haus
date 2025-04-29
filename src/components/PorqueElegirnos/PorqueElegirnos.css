@@ -8,12 +8,11 @@
 .f-models-main-container {
   height: auto;
   display: flex;
+  padding-top: 80px;
+  align-content: center;
   overflow: hidden;
-  background:  var(--bg-color);
+  background: var(--bg-color);
 }
-
-
-
 
 .section-header {
   text-align: center;
@@ -37,7 +36,6 @@
   color: var(--text-dark);
   opacity: 0.8;
 }
-
 
 .featured-models-content-container {
   width: 100%;

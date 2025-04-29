@@ -116,8 +116,7 @@
 
 .contact-form-container {
   background-color: var(--forest-green); /* Aplicado el nuevo verde */
-  padding: 4rem;
-  padding-top:4rem;
+  padding: 8rem 4rem;
   display: flex;
   align-items: center;
   flex-direction: column;

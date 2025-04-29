@@ -1,7 +1,7 @@
 
 export default function HomeComponent2() {
   return (
-    <main className="main-container">
+    <main className="main-container" id="inicio">
       <div className="contenedor-home">
         {/* <Navbar2 /> */}
 
@@ -15,7 +15,7 @@ export default function HomeComponent2() {
               </h1>
             </div>
             <div className="cta-section">
-              <button className="cta-button">Explorar Proyectos</button>
+              {/* <button className="cta-button">Explorar Proyectos</button> */}
               <button className="cta-button secondary">Contacto</button>
             </div>
           </div>

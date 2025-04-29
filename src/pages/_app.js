@@ -7,6 +7,8 @@ import '../components/PorqueElegirnos/porqueElegirnos.css'
 import '../components/Proyectos/proyectos.css'
 import '../components/Footer/footer.css'
 import '../components/Navbar2/navbar2.css'
+import '../components/MiddleComponent/middleComponent.css'
+
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;

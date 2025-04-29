@@ -1,9 +1,19 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Contacto = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    // Ajuste para compensar el navbar fijo
+    if (sectionRef.current) {
+      const navbarHeight = 98;
+      sectionRef.current.style.scrollMarginTop = `${navbarHeight}px`;
+    }
+  }, []);
+
   return (
-    <section id='contacto' className="contact-section">
+    <section id='contacto' className="contact-section" ref={sectionRef}>
       <div className="contact-container">
         <div className="contact-hero">
           <div className="hero-overlay"></div>
@@ -17,10 +27,6 @@ const Contacto = () => {
         </div>
 
         <div className="contact-form-container">
-          <div className="form-header">
-            <h3 className="form-title">¡Hablemos!</h3>
-          </div>
-          
           <form className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Nombre completo *</label>
@@ -74,7 +80,7 @@ const Contacto = () => {
             </div>
             
             <button type="submit" className="submit-btn">
-              Enviar consulta
+              HABLEMOS
               <span className="arrow-icon">→</span>
             </button>
           </form>

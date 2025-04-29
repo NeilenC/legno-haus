@@ -6,6 +6,7 @@ import Contacto from "@/components/Contacto/Contacto";
 import Footer from "@/components/Footer/Footer";
 import Home2 from "@/components/Home/Home2/Home2";
 import HomeComponent from "@/components/Home/HomeComponent";
+import MiddleComponent from "@/components/MiddleComponent/MiddleComponent";
 import Navbar from "@/components/Navbar/Navbar";
 import Navbar2 from "@/components/Navbar2/Navbar2";
 import PorqueElegirnos from "@/components/PorqueElegirnos/PorqueElegirnos";
@@ -23,29 +24,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Navbar2 />
+      <Navbar2 />
       {/* <HomeComponent /> */}
-      <Home2/>
+      <Home2 />
       <Proyectos />
       <About />
       <PorqueElegirnos />
+      {/* <MiddleComponent/> */}
       <Beneficios />
       <Contacto />
-      <Footer/>
+      <Footer />
 
-       <Link 
-          href="https://wa.me/549XXXXXXXXX"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "60px",
-            right: "30px",
-            zIndex: 1000,
-          }}
-        >
-<WhatsappIcon/>
-        </Link>
+      <Link
+        href="https://wa.me/+5491150031001"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: "60px",
+          right: "30px",
+          zIndex: 1000,
+        }}
+      >
+        <WhatsappIcon />
+      </Link>
     </>
   );
 }

@@ -20,7 +20,8 @@
 }
 
 .contenedor-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("/home-background.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("/background.jpeg");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,6 +55,7 @@
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: 1px;
+  margin-top:10%;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -153,6 +155,8 @@
 @media (max-width: 768px) {
   .leyenda {
     font-size: 2rem;
+
+
   }
   
   .cta-section {

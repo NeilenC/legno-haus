@@ -38,7 +38,7 @@ const PorqueElegirnos = () => {
 
 
   return (
-    <div className='f-models-main-container'>
+    <div id='porque-elegirnos' className='f-models-main-container'>
       <div className='featured-models-content-container'>
         {/* <h1 className='featured-models-title'>¿ Por qué <span style={{fontWeight: 'bold',color: 'var(--main-orange)'}}>elegirnos</span> ?</h1> */}
         <div className='section-header'>
@@ -100,13 +100,13 @@ const PorqueElegirnos = () => {
                 <div key={option.id} className='featured-model-card-container'>
                   <div
                     className={`featured-models-images-container ${isExpanded ? 'expanded' : isPrevToExpanded ? 'adjacent2' : 'adjacent'}`}
+                    onClick={() => toggleDescription(option.id)}
                   >
                     <Image
                       src={option.img}
                       fill='auto'
                       alt='option'
                       className='featured-models-images'
-                      onClick={() => toggleDescription(option.id)}
                     />
                      {!isExpanded && (
     <div className="image-title-overlay">
