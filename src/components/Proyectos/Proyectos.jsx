@@ -3,12 +3,12 @@ import React from 'react';
 import Image from 'next/image';
 
 const items = [
-  { title: 'Residencias', image: '/home.png' },
-  { title: 'Desarrollo Inmobiliario', image: '/home2.jpg' },
-  { title: 'Turismo', image: '/home2.jpeg' },
-  { title: 'Oficinas', image: '/house1.png' },
-  { title: 'Aire Libre', image: '/home-background.jpeg' },
-  { title: 'Viviendas sociales', image: '/house1.png' },
+  { title: 'Residencias', image: '/background.jpeg' },
+  { title: 'Desarrollo Inmobiliario', image: '/house-inmo.jpeg' },
+  { title: 'Turismo', image: '/room.jpeg' },
+  { title: 'Oficinas', image: '/living.jpeg' },
+  { title: 'Aire Libre', image: '/house-beach.jpeg' },
+  { title: 'Viviendas sociales', image: '/techo.jpeg' },
 ];
 
 const Proyectos = () => {
