@@ -1,7 +1,7 @@
 /* Barra de navegación */
 .barra-navegacion {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
   background-color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   display: flex;
