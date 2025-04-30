@@ -67,10 +67,12 @@
 
 .contact-hero {
   position: relative;
-  background: url('/home.png') center/cover no-repeat;
+  background: url('/background.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
 }
 
 .hero-overlay {
