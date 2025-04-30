@@ -36,8 +36,8 @@ const About = () => {
         <div className="about-images">
           <div className="image-container first-image">
             <Image 
-              width={300} 
-              height={450} 
+              width={250} 
+              height={350} 
               alt="Fundador" 
               src={"/el.png"}
               className="about-img"
@@ -45,12 +45,12 @@ const About = () => {
           </div>
           <div className="image-container second-image">
             <Image
-              width={300}
-              height={450}
+              width={250}
+              height={350}
               alt="Co-fundadora"
               src={"/ella.png"}
               className="about-img"
-            />
+              />
           </div>
         </div>
       </div>

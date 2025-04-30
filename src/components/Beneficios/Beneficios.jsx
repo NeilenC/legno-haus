@@ -1,15 +1,27 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faClock,
+  faLeaf,
+  faDollarSign,
+  faBuilding,
+  faHammer,
+  faTrophy,
+  faMagic,
+  faRocket,
+  faUserTie
+} from '@fortawesome/free-solid-svg-icons';
 
 const beneficios = [
-  { label: "Rápido", icon: "⏱️", description: "Construcción en tiempo récord" },
-  { label: "Sustentable", icon: "🌱", description: "Materiales ecológicos" },
-  { label: "Bajo costo", icon: "💲", description: "Soluciones accesibles" },
-  { label: "Pre construída", icon: "🏗️", description: "Instalación inmediata" },
-  { label: "Construcción en seco", icon: "🔨", description: "Tecnología limpia" },
-  { label: "Calidad superior", icon: "🏆", description: "Estándares elevados" },
-  { label: "Diseño Innovador", icon: "✨", description: "Diseño vanguardista" },
-  { label: " Ser parte del futuro", icon: "🚀", description: "Tecnología avanzada" },
-  { label: "Pensadas por profesionales", icon: "👨‍💼", description: "Equipo experto" }
+  { label: "Rápido", icon: faClock, description: "Construcción en tiempo récord" },
+  { label: "Sustentable", icon: faLeaf, description: "Materiales ecológicos" },
+  { label: "Bajo costo", icon: faDollarSign, description: "Soluciones accesibles" },
+  { label: "Pre construída", icon: faBuilding, description: "Instalación inmediata" },
+  { label: "Construcción en seco", icon: faHammer, description: "Tecnología limpia" },
+  { label: "Calidad superior", icon: faTrophy, description: "Estándares elevados" },
+  { label: "Diseño Innovador", icon: faMagic, description: "Diseño vanguardista" },
+  { label: "Ser parte del futuro", icon: faRocket, description: "Tecnología avanzada" },
+  { label: "Pensadas por profesionales", icon: faUserTie, description: "Equipo experto" }
 ];
 
 const Beneficios = () => {
@@ -22,9 +34,9 @@ const Beneficios = () => {
 
       <div className="beneficios-circles">
         {beneficios.map((beneficio, index) => (
-          <div key={index} className="circle-container">
+          <div key={index} className="circle-container ">
             <div className="beneficio-circle">
-              <span className="circle-icon">{beneficio.icon}</span>
+              <FontAwesomeIcon icon={beneficio.icon} className="circle-icon beneficio-icon" />
             </div>
             <div className="circle-text">
               <h3 className="circle-label">{beneficio.label}</h3>

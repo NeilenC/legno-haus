@@ -1,5 +1,16 @@
+import { useState } from "react";
 
 export default function HomeComponent2() {
+  const [activeSection, setActiveSection] = useState("");
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(id);
+    }
+  };
+
   return (
     <main className="main-container" id="inicio">
       <div className="contenedor-home">
@@ -16,7 +27,12 @@ export default function HomeComponent2() {
             </div>
             <div className="cta-section">
               {/* <button className="cta-button">Explorar Proyectos</button> */}
-              <button className="cta-button secondary">Contacto</button>
+              <button
+                className="cta-button secondary"
+                onClick={() => scrollToSection("contacto")}
+              >
+                Contacto
+              </button>
             </div>
           </div>
           <div className="scroll-indicator">

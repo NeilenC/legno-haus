@@ -2,13 +2,13 @@
 :root {
   --primary-color: #ff7d00;
   --text-color: #0a0a0a;
-  --light-bg: #f5f5f5;
+  --light-bg: #ededed;
   --circle-size: 100px;
   --circle-color: rgba(255, 125, 0, 0.1);
 }
 
 .beneficios-section {
-  background-color: #f5f5f5;
+  background-color: #ededed;
   height: 100vh;
   position: relative;
   text-align: center;
@@ -16,6 +16,22 @@
   align-content:center;
 }
 
+/* Estilos para los iconos */
+.beneficio-icon {
+  color: #355E3B; /* Color gris inicial */
+  transition: color 0.3s ease; /* Transición suave */
+  font-size: 1.5rem; /* Tamaño del icono (ajustable) */
+}
+
+/* Cambio a verde al hacer hover */
+.beneficio-icon:hover {
+  color: #1a6e1a; /* Color verde */
+}
+
+/* Opcional: Hover en todo el contenedor */
+.circle-container:hover .beneficio-icon {
+  color: #1a6e1a;
+}
 .section-header {
   margin: 0 auto 50px;
 }

@@ -58,11 +58,7 @@
   margin-top: 0.5rem;
 }
 
-/* Ajusta el padding del contenedor del formulario */
-.contact-form-container {
-  padding: 3rem 4rem;
-  /* resto de tus estilos... */
-}
+
 
 /* Asegúrate que el formulario no tenga margen superior */
 .contact-form {
@@ -116,10 +112,11 @@
 
 .contact-form-container {
   background-color: var(--forest-green); /* Aplicado el nuevo verde */
-  padding: 8rem 4rem;
+  padding:4rem;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
 .contact-form {
