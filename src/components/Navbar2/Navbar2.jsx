@@ -1,29 +1,28 @@
+import React, { useState } from "react";
 
 const Navbar2 = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <header className="barra-navegacion">
       <p className="logo">
         LEGNO <br />
-        <span style={{ fontSize: "15px" }}>HAUS</span>{" "}
+        <span style={{ fontSize: "15px" }}>HAUS</span>
       </p>
-      {/* <Image src={'/logo.png'} height={55} width={55}/> */}
-      <nav>
+
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <nav className={menuOpen ? "menu-mobile open" : "menu-mobile"}>
         <ul>
-          <li>
-            <a href="#proyectos">Proyectos</a>
-          </li>
-          <li>
-            <a href="#quienes-somos">¿Quiénes somos?</a>
-          </li>
-          <li>
-            <a href="#porque-elegirnos">¿Por qué elegirnos?</a>
-          </li>
-          <li>
-            <a href="#beneficios">Beneficios</a>
-          </li>
-          <li>
-            <a href="#contacto">Contácto</a>
-          </li>
+          <li><a href="#proyectos" onClick={toggleMenu}>Proyectos</a></li>
+          <li><a href="#quienes-somos" onClick={toggleMenu}>¿Quiénes somos?</a></li>
+          <li><a href="#porque-elegirnos" onClick={toggleMenu}>¿Por qué elegirnos?</a></li>
+          <li><a href="#beneficios" onClick={toggleMenu}>Beneficios</a></li>
+          <li><a href="#contacto" onClick={toggleMenu}>Contácto</a></li>
         </ul>
       </nav>
     </header>

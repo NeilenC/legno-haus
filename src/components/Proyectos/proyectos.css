@@ -2,10 +2,9 @@
 .proyectos-section {
   /* background-color: #ededed; */
   background-color: #0a0a0a;
-  padding: 150px 5% 100px;
+  padding: 50px 25px;
   position: relative;
   overflow: hidden;
-
 }
 
 .section-header {
@@ -67,7 +66,11 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 60%
+  );
   display: flex;
   align-items: flex-end;
   padding: 30px;
@@ -109,7 +112,11 @@
 }
 
 .proyecto-item:hover .overlay {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 60%
+  );
 }
 
 .proyecto-item:hover .overlay-content {
@@ -125,10 +132,12 @@
 
 /* Responsive */
 @media (min-width: 768px) {
+
+
   .proyectos-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .proyectos-title {
     font-size: 3rem;
   }
@@ -138,17 +147,26 @@
   .proyectos-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .proyectos-title {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
+  .proyectos-section {
+    /* background-color: #ededed; */
+    padding: 120px 25px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
   .proyectos-title {
     font-size: 2rem;
   }
-  
+
   .overlay h3 {
     font-size: 1.5rem;
   }

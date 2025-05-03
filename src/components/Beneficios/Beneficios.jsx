@@ -16,20 +16,20 @@ const beneficios = [
   { label: "Rápido", icon: faClock, description: "Construcción en tiempo récord" },
   { label: "Sustentable", icon: faLeaf, description: "Materiales ecológicos" },
   { label: "Bajo costo", icon: faDollarSign, description: "Soluciones accesibles" },
-  { label: "Pre construída", icon: faBuilding, description: "Instalación inmediata" },
   { label: "Construcción en seco", icon: faHammer, description: "Tecnología limpia" },
+  { label: "Pre construída", icon: faBuilding, description: "Instalación inmediata" },
   { label: "Calidad superior", icon: faTrophy, description: "Estándares elevados" },
   { label: "Diseño Innovador", icon: faMagic, description: "Diseño vanguardista" },
+  { label: "Pensadas por profesionales", icon: faUserTie, description: "Equipo experto" },
   { label: "Ser parte del futuro", icon: faRocket, description: "Tecnología avanzada" },
-  { label: "Pensadas por profesionales", icon: faUserTie, description: "Equipo experto" }
 ];
 
 const Beneficios = () => {
   return (
     <section id="beneficios" className="beneficios-section">
       <div className="section-header">
-        <h2 className="section-subtitle">NUESTRAS VENTAJAS</h2>
-        <h1 className="section-title">Beneficios <span>exclusivos</span></h1>
+        {/* <h2 className="section-subtitle">NUESTRAS VENTAJAS</h2> */}
+        <h1 className="section-title"><span>Beneficios</span></h1>
       </div>
 
       <div className="beneficios-circles">

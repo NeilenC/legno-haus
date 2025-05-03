@@ -2,7 +2,7 @@
 :root {
   --primary: #ff7d00;
   --primary-dark: #e67000;
-  --forest-green: #355E3B;  /* Nuevo color verde natural */
+  --forest-green: #355e3b; /* Nuevo color verde natural */
   --forest-green-dark: #1a6e1a;
   --light-bg: #f9f9f9;
   --text-dark: #333;
@@ -41,7 +41,7 @@
 }
 
 .form-title:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -58,8 +58,6 @@
   margin-top: 0.5rem;
 }
 
-
-
 /* Asegúrate que el formulario no tenga margen superior */
 .contact-form {
   margin-top: 0;
@@ -67,7 +65,7 @@
 
 .contact-hero {
   position: relative;
-  background: url('/background.jpeg') center/cover no-repeat;
+  background: url("/background.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,12 +111,13 @@
 }
 
 .contact-form-container {
-  background-color: var(--forest-green); /* Aplicado el nuevo verde */
-  padding:4rem;
-  display: flex;
+  background-color: var(--forest-green);
   flex-direction: column;
-  justify-content: flex-end;
-  align-content: flex-end;
+  place-content: flex-end;
+  padding: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
 .contact-form {
@@ -146,7 +145,8 @@
   letter-spacing: 0.5px;
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   background: transparent;
   border: none;
@@ -157,7 +157,8 @@
   transition: all 0.3s ease;
 }
 
-.form-input:focus, .form-textarea:focus {
+.form-input:focus,
+.form-textarea:focus {
   outline: none;
   border-bottom-color: var(--primary);
 }
@@ -203,11 +204,11 @@
   .contact-container {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-hero {
     min-height: 400px;
   }
-  
+
   .contact-form-container {
     padding: 3rem;
   }
@@ -218,11 +219,11 @@
     grid-template-columns: 1fr;
     gap: 0;
   }
-  
+
   .hero-title {
     font-size: 2rem;
-  }
-  
+      }
+
   .contact-form-container {
     padding: 2rem;
   }
@@ -232,11 +233,11 @@
   .hero-content {
     padding: 0 2rem;
   }
-  
+
   .hero-title {
     font-size: 1.8rem;
   }
-  
+
   .submit-btn {
     max-width: 100%;
   }

@@ -12,7 +12,7 @@
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;  
-    padding: 160px 5% 100px;
+  padding: 50px ;
   align-content:center;
 }
 
@@ -58,7 +58,7 @@
 
 .intro-text {
   font-size: 1.5rem;
-  line-height: 1.4;
+  line-height: 1.3;
   margin-bottom: 2.5rem;
   color: #0a0a0a;
   font-weight: 300;
@@ -169,7 +169,7 @@
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 100px 5%;
+    padding: 120px 5%;
   }
   
   .section-title {

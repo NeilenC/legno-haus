@@ -19,10 +19,10 @@ const Contacto = () => {
           <div className="hero-overlay"></div>
           <div className="hero-content">
             <h2 className="hero-title">
-              ¿Necesitas más de una<br />
+              ¿Necesitás más de una<br />
               <span className="hero-highlight">Legno Haus</span>?
             </h2>
-            <p className="hero-subtitle">Déjanos tus datos y nos pondremos en contacto</p>
+            <p className="hero-subtitle">Dejanos tus datos y nos pondremos en contacto</p>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import InstagramIcon from "@/commons/InstagramIcon";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <footer id="footer" className="footer-container">
       <div className="footer-content">
         <div className="footer-brand">
           <div className="logo-container">

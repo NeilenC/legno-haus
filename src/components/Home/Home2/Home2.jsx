@@ -12,7 +12,7 @@ export default function HomeComponent2() {
   };
 
   return (
-    <main className="main-container" id="inicio">
+    <main id="home" className="main-container">
       <div className="contenedor-home">
         {/* <Navbar2 /> */}
 
