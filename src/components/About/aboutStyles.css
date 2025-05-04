@@ -180,7 +180,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px){
   .about-images {
     flex-direction: column;
     gap: 20px;
