@@ -65,7 +65,7 @@
 
 .contact-hero {
   position: relative;
-  background: url("/background.jpeg") center/cover no-repeat;
+  background: url("/background.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

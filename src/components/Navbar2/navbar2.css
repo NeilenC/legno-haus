@@ -110,7 +110,7 @@ nav ul li a:hover::after {
     top: 96px;
     background: rgba(0, 0, 0, 0.87);
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     animation: fadeIn 0.3s ease-in-out;
     z-index: 999;

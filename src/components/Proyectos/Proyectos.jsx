@@ -3,12 +3,12 @@ import Image from 'next/image';
 import ImageModal from './ImageModal';
 
 const items = [
-  { title: 'Residencias', image: '/background.jpeg' },
-  { title: 'Desarrollo Inmobiliario', image: '/room.jpeg' },
-  { title: 'Turismo', image: '/house-beach.jpeg' },
-  { title: 'Oficinas', image: '/living.jpeg' },
-  { title: 'Aire Libre', image: '/techo.jpeg' },
-  { title: 'Viviendas sociales', image: '/house-inmo.jpeg' },
+  { title: 'Residencias', image: '/background.webp' },
+  { title: 'Desarrollo Inmobiliario', image: '/room.webp' },
+  { title: 'Turismo', image: '/house-beach.webp' },
+  { title: 'Oficinas', image: '/living.webp' },
+  { title: 'Aire Libre', image: '/techo.webp' },
+  { title: 'Viviendas sociales', image: '/house-inmo.webp' },
 ];
 
 const Proyectos = () => {

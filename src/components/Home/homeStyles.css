@@ -10,7 +10,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/home-background.jpeg"); 
+  background-image: url("/home-background.webp"); 
   background-size: cover;
   background-position: 70%;
   background-repeat: no-repeat;
