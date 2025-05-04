@@ -101,7 +101,7 @@ nav ul li a:hover::after {
   }
 
   .barra-navegacion {
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgba(0, 0, 0, 0.87);
   }
 
   .menu-mobile {
@@ -152,7 +152,8 @@ nav ul li a:hover::after {
 /* Mobile menu */
 @media (max-width: 1024px) {
   nav ul {
-    gap: 1.5rem;
+    gap: 3.5rem;
+
   }
 }
 

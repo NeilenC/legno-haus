@@ -51,10 +51,10 @@ const Footer = () => {
             <h3 className="links-title">Contacto</h3>
             <ul>
               <li>
-                <a href="mailto:info@legnohaus.com">info@legnohaus.com</a>
+                <a href="mailto:infolegnohaus@gmail.com">infolegnohaus@gmail.com</a>
               </li>
               <li>
-                <a href="tel:+5491150031001">+54 9 11 3456-7890</a>
+                <a href="tel:+5491150031001">+54 9 11 5003-1001</a>
               </li>
               <li>Buenos Aires, Argentina</li>
             </ul>

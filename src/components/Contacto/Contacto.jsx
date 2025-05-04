@@ -27,6 +27,7 @@ const Contacto = () => {
         </div>
 
         <div className="contact-form-container">
+
           <form className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Nombre completo *</label>

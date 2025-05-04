@@ -155,12 +155,13 @@ export default function Home() {
         href="https://wa.me/+5491150031001"
         target="_blank"
         rel="noopener noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "60px",
-          right: "30px",
-          zIndex: 1000,
-        }}
+         className="whatsapp-button"
+        // style={{
+        //   position: "fixed",
+        //   bottom: "60px",
+        //   right: "30px",
+        //   zIndex: 1000,
+        // }}
       >
         <WhatsappIcon />
       </Link>

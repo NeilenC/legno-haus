@@ -1,8 +1,8 @@
-/* PorqueElegirnos.module.css */
 .mainContainer {
   height: auto;
   display: flex;
   align-content: center;
+  padding-top:50px;
   overflow: hidden;
   background: var(--bg-color);
   font-family: var(--font-geist-mono);
@@ -181,12 +181,34 @@
   padding-right: 90px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .mainContainer {
     height: auto;
     padding: 20px 0;
     overflow-x: hidden;
   }
+
+  .swiperContainer {
+    padding-right: 0px;
+  }
+
+  .modelContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+
+
+  .contentContainer {
+    height: auto;
+    padding-left: 20px;
+    margin: auto;
+    align-content: center;
+  }
+  
 
   .modelsWrapper {
     display: block;
@@ -197,7 +219,7 @@
   }
 
   .mobileCard {
-    width: calc(100% - 40px);
+    width: calc(100% - 40px) !important;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
