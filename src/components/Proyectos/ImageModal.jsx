@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import './modal.css';
 import { useBreakpoint } from '../../../Hook/useBreakpoint';
 
 const ImageModal = ({ isOpen, onClose, imageUrl, title }) => {
