@@ -303,6 +303,8 @@
   .contact-form-container {
     padding: 3rem;
   }
+
+  
 }
 
 .divider-line {
@@ -333,6 +335,11 @@
   .contact-form-container {
     border-top: 1px solid var(--primary);
     padding: 2rem;
+  }
+
+  .alert {
+    position: fixed;
+    top: 100px;
   }
 }
 
