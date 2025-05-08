@@ -61,6 +61,7 @@
 .beneficios-circles {
   display: flex;
   flex-wrap: wrap;
+ width: 700px;  
   justify-content: center;
   gap: 40px;
   margin: 0 auto;
