@@ -5,7 +5,8 @@ import emailjs from 'emailjs-com';
 const Contacto = () => {
   const sectionRef = useRef(null);
   const formRef = useRef(null);
-  const [status, setStatus] = useState('');
+  const [alert, setAlert] = useState(null);
+  const alertRef = useRef(null);
 
   useEffect(() => {
     if (sectionRef.current) {
@@ -14,28 +15,72 @@ const Contacto = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (alert) {
+      const timer = setTimeout(() => {
+        if (alertRef.current) {
+          alertRef.current.classList.remove('show');
+          setTimeout(() => setAlert(null), 500);
+        }
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [alert]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
-
       .sendForm(
         'service_ocj90kv',
         'template_h21pnw4',
         formRef.current,
-        '-H4Xy1y700eu6Fopj' 
+        '-H4Xy1y700eu6Fopj'
       )
       .then(() => {
-        setStatus('¡Mensaje enviado!');
+        setAlert({
+          type: 'success',
+          title: '¡Mensaje enviado!',
+          message: 'Pronto pondremos en contacto.'
+        });
         formRef.current.reset();
       })
       .catch(() => {
-        setStatus('Error al enviar el mensaje. Intentá más tarde.');
+        setAlert({
+          type: 'error',
+          title: 'Error',
+          message: 'No se pudo enviar el mensaje. Por favor intenta nuevamente.'
+        });
       });
+  };
+
+  const closeAlert = () => {
+    if (alertRef.current) {
+      alertRef.current.classList.remove('show');
+      setTimeout(() => setAlert(null), 500);
+    }
   };
 
   return (
     <section id="contacto" className="contact-section" ref={sectionRef}>
+      {alert && (
+        <div
+          ref={alertRef}
+          className={`alert alert-${alert.type} show`}
+          role="alert"
+        >
+          <div className="alert-icon">
+            {alert.type === 'success' ? '✓' : '✕'}
+          </div>
+          <div className="alert-content">
+            <div className="alert-title">{alert.title}</div>
+            <div className="alert-message">{alert.message}</div>
+          </div>
+          <button className="alert-close" onClick={closeAlert}>
+            &times;
+          </button>
+        </div>
+      )}
       <div className="contact-container">
         <div className="contact-hero">
           <div className="hero-overlay"></div>
@@ -81,7 +126,7 @@ const Contacto = () => {
               HABLEMOS <span className="arrow-icon">→</span>
             </button>
 
-            {status && <p className="form-status">{status}</p>}
+            {/* {status && <p className="form-status">{status}</p>} */}
           </form>
         </div>
       </div>
