@@ -70,7 +70,7 @@ const PorqueElegirnos = () => {
                         className={styles.modelImage}
                       />
                     </div>
-                    <div className={styles.descriptionContainer} style={{ marginTop: '1rem' }}>
+                    <div className={styles.descriptionContainer} >
                       <p className={styles.contentTitle}>{option.title}</p>
                       <div className={styles.modelContent}>
                         <p className={styles.houseDescription}>{option.description}</p>

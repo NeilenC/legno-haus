@@ -65,14 +65,16 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="social-links">
           <a
-            href="https://www.instagram.com/legnohausoficial/"
-            aria-label="Instagram"
+            href="https://www.facebook.com/profile.php?id=61574909873118&locale=es_LA"
+            aria-label="Facebool"
+             target="_blank"
           >
             <span>
               <FacebookIcon />
             </span>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61574909873118&locale=es_LA" aria-label="Facebook">
+          <a href="
+          https://www.instagram.com/legnohausoficial/" aria-label="Instagram" target="_blank">
             <span>
               <InstagramIcon />
             </span>

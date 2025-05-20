@@ -61,7 +61,7 @@
 .beneficios-circles {
   display: flex;
   flex-wrap: wrap;
- width: 700px;  
+  width: 700px;
   justify-content: center;
   gap: 40px;
   margin: 0 auto;
@@ -124,6 +124,7 @@
 @media (max-width: 900px) {
   .beneficios-circles {
     gap: 30px;
+
   }
   
   :root {
@@ -137,7 +138,9 @@
 
 @media (max-width: 768px) {
   .beneficios-section {
-    padding: 10px 5%;
+    height: auto;
+    padding: 110px 5%;
+    width: fit-content;
   }
 
   .section-title {
@@ -165,6 +168,7 @@
   .beneficios-circles {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: fit-content;
   }
   
   :root {

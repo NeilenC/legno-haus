@@ -22,6 +22,19 @@
   font-weight: 500;
 }
 
+.proyectos-subtitle {
+  color: white;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.proyectos-subtitle span {
+  font-weight: 600;
+  color: #ff7d00;
+}
+
 .proyectos-title {
   color: white;
   line-height: 1.3;
@@ -139,7 +152,7 @@
   }
 
   .proyectos-title {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -164,7 +177,13 @@
   }
 
   .proyectos-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
+  }
+
+  
+  .proyectos-subtitle {
+    padding-top: 10px;
+    font-size: 1.2rem;
   }
 
   .overlay h3 {

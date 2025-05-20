@@ -1,5 +1,178 @@
-/* aboutStyles.css */
 :root {
+  --primary-color: #ff7d00;
+  --secondary-color: #ffffff;
+  --text-color: #333333;
+  --bg-color: #ededed;
+  --dark-bg: #0a0a0a;
+}
+
+.about-section {
+  height: 100vh;
+  background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;  
+  padding: 50px;
+  align-content: center;
+}
+
+.section-header {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--primary-color);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.section-title {
+  color: var(--dark-bg);
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.about-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.about-text {
+  width: 100%;
+}
+
+.intro-text {
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 2.5rem;
+  color: #0a0a0a;
+  font-weight: 300;
+  text-align: center;
+}
+
+.intro-text span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.text-columns p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #0a0a0a;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.text-columns p::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  width: 3px;
+  height: 40px;
+  background-color: var(--primary-color);
+}
+
+/* Efecto de subrayado moderno */
+.highlight-text {
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+.highlight-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, var(--primary-color), rgba(255,125,0,0.3));
+  z-index: -1;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  transform-origin: left;
+}
+
+.highlight-text:hover::after {
+  height: 12px;
+  opacity: 1;
+  transform: scaleY(0.8);
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .text-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 100px 6%;
+    height:auto;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+  }
+  .highlight-text::after {
+    height: 6px;
+    bottom: 0;
+  }
+  
+  .highlight-text:hover::after {
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aboutStyles.css */
+/* :root {
   --primary-color: #ff7d00;
   --secondary-color: #ffffff;
   --text-color: #333333;
@@ -101,7 +274,6 @@
 }
 
 .image-container {
-  /* flex: 1; */
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -123,7 +295,6 @@
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Efectos hover */
 .image-container:hover {
   transform: translateY(0);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
@@ -133,7 +304,6 @@
   transform: scale(1.05);
 }
 
-/* Decoración */
 .about-images::after {
   content: "";
   position: absolute;
@@ -145,7 +315,6 @@
   background-color: var(--primary-color);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
   .about-content {
     flex-direction: column;
@@ -193,4 +362,4 @@
   .about-images::after {
     display: none;
   }
-}
+} */
