@@ -18,7 +18,7 @@ const beneficios = [
   { label: "Bajo costo", icon: faDollarSign, description: "Soluciones accesibles" },
   { label: "Construcción en seco", icon: faHammer, description: "Tecnología limpia" },
   { label: "Pre construída", icon: faBuilding, description: "Instalación inmediata" },
-  { label: "Calidad superior", icon: faTrophy, description: "Estándares elevados" },
+  // { label: "Calidad superior", icon: faTrophy, description: "Estándares elevados" },
   { label: "Diseño Innovador", icon: faMagic, description: "Diseño vanguardista" },
   { label: "Pensadas por profesionales", icon: faUserTie, description: "Equipo experto" },
   { label: "Ser parte del futuro", icon: faRocket, description: "Tecnología avanzada" },

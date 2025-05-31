@@ -2,11 +2,10 @@
   height: auto;
   display: flex;
   align-content: center;
-  padding-top:50px;
+  padding-top: 50px;
   overflow: hidden;
   background: var(--bg-color);
   font-family: var(--font-geist-mono);
-
 }
 
 .sectionHeader {
@@ -92,7 +91,6 @@
   cursor: pointer;
 }
 
-
 .imagesContainerExpanded {
   transition: none;
   width: 36vw;
@@ -137,10 +135,10 @@
   color: white;
   font-size: clamp(18px, 2vw, 20px);
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* Añadir sombra para mejor legibilidad */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Añadir sombra para mejor legibilidad */
   padding: 0 10px;
   font-weight: 500;
-  transform: rotate(-90deg)
+  transform: rotate(-90deg);
 }
 
 .toggleButton {
@@ -162,7 +160,6 @@
   transition: background-color 0.2s ease;
 }
 
-
 .toggleButton:hover {
   background-color: var(--background-green-dark);
 }
@@ -183,21 +180,16 @@
   padding-right: 90px;
 }
 
-
 @media (max-width: 800px) {
-
-
   .mainContainer {
     height: auto;
     overflow-x: hidden;
-    
   }
 
   .swiperContainer {
     padding-right: 0px;
   }
 
- 
   .modelContent {
     width: 100%;
     display: flex;
@@ -205,7 +197,7 @@
     justify-content: center;
     height: 100%;
   }
-  
+
   .sectionHeader {
     margin-bottom: 20px;
   }
@@ -215,15 +207,15 @@
     padding-left: 20px;
     margin: auto;
     align-content: center;
+    padding-top: 100px;
   }
-  
 
   .modelsWrapper {
     display: block;
   }
 
   .swiper-backface-hidden .swiper-slide {
-    width: auto !important; 
+    width: auto !important;
   }
 
   .mobileCard {
@@ -235,7 +227,7 @@
   }
 
   .imagesContainer {
-    height:300px;
+    height: 300px;
     width: 100%;
     border: none;
   }
@@ -254,7 +246,7 @@
 
   .contentTitle {
     font-size: 18px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
   }
 
   .houseDescription {

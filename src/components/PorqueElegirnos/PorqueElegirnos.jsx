@@ -65,8 +65,8 @@ const PorqueElegirnos = () => {
                       <Image
                         src={option.img}
                         alt='house'
-                        width={100}
-                        height={100}
+                                             fill='auto'
+
                         className={styles.modelImage}
                       />
                     </div>
