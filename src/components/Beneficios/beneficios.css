@@ -9,12 +9,12 @@
 
 .beneficios-section {
   background-color: #ededed;
-  height: 100vh;
+  height: 100%;
   position: relative;
   text-align: center;
   margin:auto;
   align-content:center;
-      padding-bottom: 60px;
+  padding-top:60px;
 
 }
 
@@ -182,9 +182,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px){
   .beneficios-circles {
     gap: 15px;
+
   }
   
   :root {
