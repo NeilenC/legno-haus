@@ -8,6 +8,7 @@ import Navbar2 from "@/components/Navbar2/Navbar2";
 import PorqueElegirnos from "@/components/PorqueElegirnos/PorqueElegirnos";
 import Proyectos from "@/components/Proyectos/Proyectos";
 import Head from "next/head";
+import SEO from "@/components/SEO";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import NavbarFooter from "@/components/Navbar2/NavbarFooter";
@@ -89,9 +90,13 @@ export default function Home() {
 
   return (
     <>
+      <SEO
+        title="Legno Haus"
+        description="Legno Haus — Construcciones de madera sostenibles"
+        image="/logo.png"
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://legno-haus.example'}/`}
+      />
       <Head>
-        <title>Legno Haus</title>
-        <meta name="description" content="Legno Haus" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
