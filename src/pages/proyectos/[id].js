@@ -1,97 +1,205 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import projects from '../../utils/projects.json'
 import styles from './project.module.css'
 import SEO from '../../components/SEO'
+import Navbar2 from '../../components/Navbar2/Navbar2'
+import Footer from '../../components/Footer/Footer'
 
 const ProjectPage = () => {
   const router = useRouter()
   const { id } = router.query
   const [project, setProject] = useState(null)
-  const [index, setIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     if (!id) return
+    
+    setIsLoading(true)
     const pid = parseInt(id, 10)
     const found = projects.find((p) => p.id === pid)
-    setProject(found || null)
-    setIndex(0)
+    
+    // Simular carga para mejor UX
+    const timer = setTimeout(() => {
+      setProject(found || null)
+      setCurrentIndex(0)
+      setIsLoading(false)
+    }, 300)
+    
+    return () => clearTimeout(timer)
   }, [id])
 
-  const pageTitle = project ? `Legno Haus | ${project?.title}` : 'Legno Haus'
+  const pageTitle = project ? `Legno Haus | ${project.title}` : 'Legno Haus'
 
-  if (!id) return <div className={styles.projectPage}>Cargando...</div>
-  if (!project) return <div className={styles.projectPage}>Proyecto no encontrado</div>
+  const images = project?.images || []
 
-  const images = project.images || []
+  const handlePrevious = useCallback(() => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
+  }, [images.length])
 
-  const prev = () => setIndex((i) => (i - 1 + images.length) % images.length)
-  const next = () => setIndex((i) => (i + 1) % images.length)
-  const goTo = (i) => setIndex(i)
+  const handleNext = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % images.length)
+  }, [images.length])
+
+  const goToImage = useCallback((index) => {
+    setCurrentIndex(index)
+  }, [])
+
+  // Estados de carga
+  if (isLoading) {
+    return (
+      <div className={styles.loadingContainer}>
+        <div className={styles.loadingSpinner}></div>
+        <p>Cargando proyecto...</p>
+      </div>
+    )
+  }
+
+  if (!project) {
+    return (
+      <div className={styles.errorContainer}>
+        <h1>Proyecto no encontrado</h1>
+        <p>El proyecto que buscas no existe o ha sido removido.</p>
+        <button 
+          onClick={() => router.push('/proyectos')}
+          className={styles.backButton}
+        >
+          Volver a proyectos
+        </button>
+      </div>
+    )
+  }
 
   return (
     <>
+      <Navbar2 />
       <SEO
         title={pageTitle}
-        description={project?.og_description || 'Proyecto Legno Haus'}
-        image={project?.images?.[0]}
+        description={project.og_description || 'Proyecto Legno Haus'}
+        image={project.images?.[0]}
         canonical={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://legno-haus.example'}/proyectos/${project.id}`}
       />
+      
       <main className={styles.projectPage}>
-        <h1 className={styles.title}>{project.title}</h1>
+        <header className={styles.header}>
+          <h1 className={styles.title}>{project.title}</h1>
+          {project.subtitle && (
+            <p className={styles.subtitle}>{project.subtitle}</p>
+          )}
+        </header>
 
         <div className={styles.content}>
-          {/* Left: carousel */}
-          <div className={styles.carousel}>
-            <div className={styles.carouselWrap}>
-              <Image
-                src={images[index]}
-                alt={`${project.title} - ${index + 1}`}
-                width={900}
-                height={600}
-                className={styles.carouselImage}
-              />
+          <div style={{margin:'0 auto'}}>
 
-              <button
-                onClick={prev}
-                aria-label="Anterior"
-                className={`${styles.navButton} ${styles.prev}`}
-              >
-                ‹
-              </button>
+          {/* Sección del carrusel */}
+          <section className={styles.carouselSection} aria-label="Galería de imágenes del proyecto">
+            <div className={styles.carouselContainer}>
+              <div className={styles.carouselWrapper}>
+                <div className={styles.carouselTrack}>
+                  <Image
+                    src={images[currentIndex]}
+                    alt={`${project.title} - Imagen ${currentIndex + 1} de ${images.length}`}
+                    width={800}
+                    height={500}
+                    className={styles.carouselImage}
+                    priority={currentIndex === 0}
+                    />
+                </div>
 
-              <button
-                onClick={next}
-                aria-label="Siguiente"
-                className={`${styles.navButton} ${styles.next}`}
-              >
-                ›
-              </button>
+                {/* Controles de navegación */}
+                {images.length > 1 && (
+                  <>
+                    <button
+                      onClick={handlePrevious}
+                      aria-label="Imagen anterior"
+                      className={`${styles.navButton} ${styles.prev}`}
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </button>
+
+                    <button
+                      onClick={handleNext}
+                      aria-label="Siguiente imagen"
+                      className={`${styles.navButton} ${styles.next}`}
+                    >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </button>
+                  </>
+                )}
+
+                {/* Contador de imágenes */}
+                {images.length > 1 && (
+                  <div className={styles.imageCounter}>
+                    {currentIndex + 1} / {images.length}
+                  </div>
+                )}
+              </div>
+
+              {/* Miniaturas */}
+              {images.length > 1 && (
+                <div className={styles.thumbnails}>
+                  {images.map((src, index) => (
+                    <button
+                    key={src}
+                    onClick={() => goToImage(index)}
+                    className={`${styles.thumbnail} ${index === currentIndex ? styles.thumbnailActive : ''}`}
+                    aria-label={`Ver imagen ${index + 1}`}
+                      aria-current={index === currentIndex}
+                      >
+                      <Image 
+                        src={src} 
+                        alt={`Miniatura ${index + 1}`} 
+                        width={80} 
+                        height={60} 
+                        className={styles.thumbnailImage}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
+          </section>
 
-            {/* Thumbnails */}
-            <div className={styles.thumbs}>
-              {images.map((src, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  className={`${styles.thumbBtn} ${i === index ? styles.thumbActive : ''}`}
-                  aria-label={`Ir a imagen ${i + 1}`}
-                >
-                  <Image src={src} alt={`${project.title} thumb ${i + 1}`} width={160} height={100} className={styles.thumbImg} />
-                </button>
-              ))}
+          {/* Información del proyecto */}
+          <aside className={styles.projectInfo}>
+            <div className={styles.infoCard}>
+              <h2>Descripción del Proyecto</h2>
+              <div className={styles.description}>
+                {project.description}
+              </div>
+              
+              {/* Metadatos adicionales */}
+              {(project.location || project.year || project.category) && (
+                <div className={styles.metadata}>
+                  {project.location && (
+                    <div className={styles.metaItem}>
+                      <strong>Ubicación:</strong> {project.location}
+                    </div>
+                  )}
+                  {project.year && (
+                    <div className={styles.metaItem}>
+                      <strong>Año:</strong> {project.year}
+                    </div>
+                  )}
+                  {project.category && (
+                    <div className={styles.metaItem}>
+                      <strong>Categoría:</strong> {project.category}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
-          </div>
-
-          {/* Right: description */}
-          <aside className={styles.aside}>
-            <h2>Descripción</h2>
-            <p className={styles.description}>{project.description}</p>
           </aside>
+                  </div>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

@@ -1,6 +1,8 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import Navbar2 from '../Navbar2/Navbar2';
+import Footer from '../Footer/Footer';
 
 const Contacto = () => {
   const sectionRef = useRef(null);
@@ -62,75 +64,76 @@ const Contacto = () => {
   };
 
   return (
-    <section id="contacto" className="contact-section" ref={sectionRef}>
-      {alert && (
-        <div
-          ref={alertRef}
-          className={`alert alert-${alert.type} show`}
-          role="alert"
-        >
-          <div className="alert-icon">
-            {alert.type === 'success' ? '✓' : '✕'}
-          </div>
-          <div className="alert-content">
-            <div className="alert-title">{alert.title}</div>
-            <div className="alert-message">{alert.message}</div>
-          </div>
-          <button className="alert-close" onClick={closeAlert}>
-            &times;
-          </button>
-        </div>
-      )}
-      <div className="contact-container">
-        <div className="contact-hero">
-          <div className="hero-overlay"></div>
-          <div className="hero-content">
-            <h2 className="hero-title">
-              ¿Necesitás más de una<br />
-              <span className="hero-highlight">Legno Haus</span>?
-            </h2>
-            <p className="hero-subtitle">Dejanos tus datos y nos pondremos en contacto</p>
-          </div>
-        </div>
-
-        <div className="contact-form-container">
-          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
-            <div className="form-group">
-              <label htmlFor="name">Nombre completo *</label>
-              <input type="text" id="name" name="name" required className="form-input" />
+    <>
+      <Navbar2 />
+      <section id="contacto" className="contact-section" ref={sectionRef}>
+        {alert && (
+          <div
+            ref={alertRef}
+            className={`alert alert-${alert.type} show`}
+            role="alert"
+          >
+            <div className="alert-icon">
+              {alert.type === 'success' ? '✓' : '✕'}
             </div>
-
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="phone">Teléfono *</label>
-                <input type="tel" id="phone" name="phone" required className="form-input" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Email *</label>
-                <input type="email" id="email" name="email" required className="form-input" />
-              </div>
+            <div className="alert-content">
+              <div className="alert-title">{alert.title}</div>
+              <div className="alert-message">{alert.message}</div>
             </div>
-
-            <div className="form-group">
-              <label htmlFor="schedule">Horario para contactarte *</label>
-              <input type="text" id="schedule" name="schedule" required className="form-input" />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message">Mensaje</label>
-              <textarea id="message" name="message" rows={4} className="form-textarea"></textarea>
-            </div>
-
-            <button type="submit" className="submit-btn">
-              HABLEMOS <span className="arrow-icon">→</span>
+            <button className="alert-close" onClick={closeAlert}>
+              &times;
             </button>
+          </div>
+        )}
 
-            {/* {status && <p className="form-status">{status}</p>} */}
-          </form>
+        <div className="contact-container">
+          <div className="form-banner">
+            <div className="banner-overlay"></div>
+            <div className="banner-content">
+              <h3 className="banner-title">¿Querés una Legno Haus?</h3>
+              <p className="banner-sub">Dejanos tus datos y nos pondremos en contacto</p>
+            </div>
+          </div>
+
+          <div className="contact-form-container">
+            <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+              <div className="form-group">
+                <label htmlFor="name">Nombre completo *</label>
+                <input type="text" id="name" name="name" required className="form-input" />
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="phone">Teléfono *</label>
+                  <input type="tel" id="phone" name="phone" required className="form-input" />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="email">Email *</label>
+                  <input type="email" id="email" name="email" required className="form-input" />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="schedule">Horario para contactarte *</label>
+                <input type="text" id="schedule" name="schedule" required className="form-input" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Mensaje</label>
+                <textarea id="message" name="message" rows={4} className="form-textarea"></textarea>
+              </div>
+
+              <button type="submit" className="submit-btn">
+                HABLEMOS <span className="arrow-icon">→</span>
+              </button>
+
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </>
   );
 };
 
