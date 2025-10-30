@@ -154,7 +154,6 @@ export default function Home() {
       <Beneficios />
       <Contacto />
 
-      <Footer />
 
       <Link
         href="https://wa.me/+5491150031001"

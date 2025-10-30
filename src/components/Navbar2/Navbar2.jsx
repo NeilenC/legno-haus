@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 const Navbar2 = () => {
@@ -7,10 +8,15 @@ const Navbar2 = () => {
 
   return (
     <header className="barra-navegacion">
-      <p className="logo">
+      {/* <p className="logo">
         LEGNO <br />
         <span style={{ fontSize: "15px" }}>HAUS</span>
-      </p>
+      </p> */}
+      <Image
+        src="/logo-lineas.webp"
+        alt="Legno Haus Logo"
+        width={ 93}
+        height={120}/>
 
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
