@@ -3,7 +3,8 @@
     background-color: #0a0a0a;
     color: #f5f5f5;
     padding: 30px 5% 30px;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* Use site's default font (Raleway) */
+    font-family: inherit;
   }
   
   .footer-content {
@@ -36,7 +37,7 @@
     font-size: 1rem;
     margin-left: 5px;
     letter-spacing: 3px;
-    color: #ff7d00;
+  color: #a66514;
     position: relative;
     bottom: 3px;
   }
@@ -60,7 +61,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
-    color: #ff7d00;
+  color: #a66514;
   }
   
   .links-column ul {
@@ -91,7 +92,7 @@
   }
   
   .links-column a:hover {
-    color: #ff7d00;
+  color: #a66514;
   }
   
   .footer-bottom {
@@ -121,8 +122,8 @@
   }
   
   .social-icon:hover {
-    background-color: #ff7d00;
-    border-color: #ff7d00;
+  background-color: #a66514;
+  border-color: #a66514;
     color: #0a0a0a;
   }
   

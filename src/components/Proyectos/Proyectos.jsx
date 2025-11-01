@@ -43,7 +43,7 @@ const Proyectos = () => {
         }}
       >
         <div className="proyectos-header">
-          <h2 className="section-subtitle">NUESTROS PROYECTOS</h2>
+          <h2 className="project-subtitle">NUESTROS PROYECTOS</h2>
           <div className="proyectos-texts">
             <p className="proyectos-title">
               La <span>madera</span>, el cambio del <span>presente</span>

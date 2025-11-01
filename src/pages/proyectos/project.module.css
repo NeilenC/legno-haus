@@ -6,7 +6,7 @@
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-muted: #64748b;
-  --accent-primary: #ff7d00;
+  --accent-primary: #a66514;
   --accent-secondary: #fb923c;
   --border-light: #e2e8f0;
   --border-medium: #cbd5e1;
@@ -28,7 +28,8 @@
   min-height: 100vh;
   background: linear-gradient(135deg, var(--bg-primary) 0%, #fdf4f7ff 100%);
   color: var(--text-primary);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  /* Prefer site default font (Raleway) defined in globals.css */
+  font-family: inherit;
   line-height: 1.6;
   margin: 0 auto;
 }

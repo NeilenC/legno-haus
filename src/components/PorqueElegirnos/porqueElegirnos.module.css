@@ -5,7 +5,8 @@
   padding-top: 50px;
   overflow: hidden;
   background: var(--bg-color);
-  font-family: var(--font-geist-mono);
+  /* Use site default font (Raleway) */
+  font-family: inherit;
 }
 
 .sectionHeader {
@@ -37,7 +38,7 @@
   height: auto;
   margin: auto;
   margin-bottom: 60px;
-  max-width: calc(100% - 40px );
+  max-width: calc(100% - 80px );
 }
 
 .modelsWrapper {
@@ -219,7 +220,7 @@
   }
 
   .mobileCard {
-    width: calc(100% - 40px) !important;
+    width: calc(100% - 80px) !important;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
