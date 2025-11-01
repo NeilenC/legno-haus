@@ -38,7 +38,7 @@ const Proyectos = () => {
         style={{
           position: "relative",
           margin: "0 auto",
-          paddingTop: "100px",
+          paddingTop: "52px",
           width: "calc(100% - 100px)",
         }}
       >

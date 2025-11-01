@@ -3,52 +3,24 @@
   --primary-color: #ff7d00;
   --text-color: #0a0a0a;
   --light-bg: #ededed;
-  --circle-size: 100px;
-  --circle-color: rgba(255, 125, 0, 0.1);
+  --border-color: #d0d0d0;
 }
 
 .beneficios-section {
-  background-color: #ededed;
-  height: 100%;
+  background-color: #2d2d2d;
   position: relative;
   text-align: center;
-  margin:auto;
-  align-content:center;
-  padding-top:60px;
-
+  margin: auto;
+  padding-block: 40px;
+  height: auto;
 }
 
-/* Estilos para los iconos */
-.beneficio-icon {
-  color: #355E3B; /* Color gris inicial */
-  transition: color 0.3s ease; /* Transición suave */
-  font-size: 1.5rem; /* Tamaño del icono (ajustable) */
-}
-
-/* Cambio a verde al hacer hover */
-.beneficio-icon:hover {
-  color: #1a6e1a; /* Color verde */
-}
-
-/* Opcional: Hover en todo el contenedor */
-.circle-container:hover .beneficio-icon {
-  color: #1a6e1a;
-}
 .section-header {
   margin: 0 auto 50px;
 }
 
-.section-subtitle {
-  color: var(--primary-color);
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
 .section-title {
-  color:  #0a0a0a;
+  color: #0a0a0a;
   font-size: 2.2rem;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -60,144 +32,230 @@
   font-weight: 400;
 }
 
-.beneficios-circles {
-  display: flex;
-  flex-wrap: wrap;
-  width: 700px;
-  justify-content: center;
-  gap: 40px;
+/* Cambiado de flexbox a CSS Grid con 4 columnas */
+.beneficios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: calc(100% - 80px);
   margin: 0 auto;
-  padding-bottom:60px;
 }
 
-.circle-container {
+/* Cambiado de círculos a cuadrados con bordes */
+.beneficio-card {
+  background-color: #2d2d2d;
+  border: 1px solid var(--border-color);
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: var(--circle-size);
-}
-
-.beneficio-circle {
-  width: var(--circle-size);
-  height: var(--circle-size);
-  border-radius: 50%;
-  background-color: var(--circle-color);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  text-align: center;
   transition: all 0.3s ease;
+  min-height: 200px;
 }
 
-.circle-icon {
-  font-size: 2.5rem;
-  line-height: 1;
+.beneficio-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* border-color: var(--primary-color); */
 }
 
-.circle-text {
+/* Estilos actualizados para iconos en cuadrados */
+.beneficio-icon {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.beneficio-card:hover .beneficio-icon {
+  color: var(--primary-color);
+}
+
+.beneficio-text {
   text-align: center;
 }
 
-.circle-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color:  #0a0a0a;
-  margin: 0 0 5px 0;
+.beneficio-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
 }
 
-.circle-description {
-  font-size: 0.85rem;
+.beneficio-description {
+  font-size: 0.9rem;
   line-height: 1.4;
-  color:  #0a0a0a;
+  color: #cccccc;
   margin: 0;
-  opacity: 0.8;
 }
-
-/* Efectos hover */
-.beneficio-circle:hover {
-
-  transform: scale(1.1);
-  background-color: rgba(255, 125, 0, 0.2);
-}
-
-
-
 
 /* Responsive */
-@media (max-width: 900px) {
-  .beneficios-circles {
-    gap: 30px;
-
-  }
-  
-  :root {
-    --circle-size: 100px;
-  }
-  
-  .circle-icon {
-    font-size: 2rem;
+@media (max-width: 1024px) {
+  .beneficios-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .beneficios-section {
-    height: auto;
-    padding: 150px 5%;
-    width: fit-content;
+    padding: 40px 15px;
   }
 
   .section-title {
     font-size: 1.8rem;
   }
-  
-  .beneficios-circles {
-    gap: 25px;
+
+  .beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  :root {
-    --circle-size: 90px;
+
+  .beneficio-card {
+    padding: 30px 15px;
+    min-height: 180px;
   }
-  
-  .circle-label {
-    font-size: 0.9rem;
+
+  .beneficio-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
   }
-  
-  .circle-description {
+
+  .beneficio-label {
+    font-size: 1rem;
+  }
+
+  .beneficio-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .beneficios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficio-card {
+    padding: 25px 15px;
+    min-height: 160px;
+  }
+
+  .beneficio-icon {
+    font-size: 2rem;
+  }
+
+  .beneficio-label {
+    font-size: 0.95rem;
+  }
+
+  .beneficio-description {
     font-size: 0.8rem;
   }
 }
 
-@media (max-width: 600px) {
-  .beneficios-circles {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: fit-content;
+/* Agregados estilos para la sección Nosotros */
+.nosotros-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+}
+
+.nosotros-content {
+  background-color: #2d2d2d;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.nosotros-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.nosotros-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ff7d00;
+  margin: 0 0 30px 0;
+  line-height: 1.4;
+}
+
+.nosotros-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.nosotros-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--border-color);
+}
+
+.nosotros-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive para sección Nosotros */
+@media (max-width: 768px) {
+  .nosotros-section {
+    grid-template-columns: 1fr;
   }
-  
-  :root {
-    --circle-size: 80px;
+
+  .nosotros-content {
+    padding: 40px 30px;
   }
-  
-  .circle-icon {
+
+  .nosotros-title {
+    font-size: 2.2rem;
+  }
+
+  .nosotros-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .nosotros-text {
+    font-size: 0.95rem;
+  }
+
+  .nosotros-image {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros-content {
+    padding: 30px 20px;
+  }
+
+  .nosotros-title {
     font-size: 1.8rem;
   }
-}
 
-@media (max-width: 780px){
-  .beneficios-circles {
-    gap: 15px;
+  .nosotros-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
 
+  .nosotros-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
-  
-  :root {
-    --circle-size: 70px;
-  }
-  
-  .circle-icon {
-    font-size: 1.5rem;
-  }
-  
-  .circle-label {
-    font-size: 0.8rem;
+
+  .nosotros-image {
+    min-height: 250px;
   }
 }

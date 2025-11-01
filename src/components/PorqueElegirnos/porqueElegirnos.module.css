@@ -36,8 +36,8 @@
   width: 100%;
   height: auto;
   margin: auto;
-  align-content: center;
-  padding-inline: 15px;
+  margin-bottom: 60px;
+  max-width: calc(100% - 40px );
 }
 
 .modelsWrapper {
