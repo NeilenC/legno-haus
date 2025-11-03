@@ -2,7 +2,7 @@
 :root {
   --primary: #a66514;
   --primary-dark: #e67000;
-  --forest-green: #355e3b; 
+  --forest-green: #355e3b;
   --forest-green-dark: #1a6e1a;
   --light-bg: #f9f9f9;
   --text-dark: #333;
@@ -11,21 +11,20 @@
 }
 
 .contact-section {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
+  background-color: #2d2d2d;
+  /* display: flex;
+  flex-direction: row; */
   position: relative;
+
   overflow: hidden;
 }
 
-.contact-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+.contact-form-container {
+  padding: 0;
   width: 100%;
 }
 
 /* Agrega esto a tu contacto.css */
-
 .form-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -111,20 +110,48 @@
 }
 
 .contact-form-container {
-  background-color: var(--forest-green);
-  flex-direction: column;
-  place-content: flex-end;
-  padding: 4rem;
+  background-color: #2d2d2d;
+  width: calc(100% - 80px);
+  margin: 0 auto;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  justify-content: flex-end;
+  /* center children vertically so banner text aligns with the form */
+  align-items: center;
+  padding-block: 50px 80px;
 }
 
 .contact-form {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  width: 50%;
+  padding-inline: 40px;
   color: var(--text-light);
+}
+
+.form-banner {
+  width: 50%;
+  margin-bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  line-height: 2;
+}
+
+.banner-title {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.banner-content {
+  margin-top: 0;
+}
+
+.banner-sub {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
 }
 
 .form-row {
@@ -139,10 +166,11 @@
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-size: 0.9rem;
+  opacity: 0.9;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 
 .form-input,
@@ -168,28 +196,26 @@
 }
 
 .submit-btn {
-  background-color: var(--primary);
+  background-color: #a66514;
   color: white;
   border: none;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 4px;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
-  max-width: 200px;
   margin-top: 1rem;
   transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-dark);
-  transform: translateX(5px);
+  background-color: #4d4600;
+  transform: translateY(1px);
 }
 
+.submit-btn span {
+  opacity: 0.9;
+}
 .arrow-icon {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
@@ -199,8 +225,6 @@
   transform: translateX(3px);
 }
 
-
-
 /* Alert Styles */
 .alert {
   position: fixed;
@@ -208,7 +232,8 @@
   right: 20px;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   z-index: 1000;
@@ -286,7 +311,7 @@
   }
   to {
     opacity: 0;
-  transform: translateX(30px);
+    transform: translateX(30px);
   }
 }
 
@@ -301,27 +326,17 @@
   }
 
   .contact-form-container {
-    padding: 3rem;
+    padding: 0;
   }
-
-  
 }
 
 .divider-line {
   display: none;
 }
 
-
-
 @media (max-width: 768px) {
-
-  .divider-line {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--primary);
+    .contact-container {
   }
-
 
   .form-row {
     grid-template-columns: 1fr;
@@ -330,10 +345,9 @@
 
   .hero-title {
     font-size: 2rem;
-      }
+  }
 
   .contact-form-container {
-    border-top: 1px solid var(--primary);
     padding: 2rem;
   }
 
@@ -343,11 +357,34 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
+
+    .contact-container {
+      padding-bottom: 3rem;
+  }
+
+
   .hero-content {
     padding: 0 2rem;
   }
+  .contact-section {
+    flex-direction: column;
+  }
 
+  .form-banner {
+    width: 100%;
+    margin-block: 3rem 5rem;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding-inline: 0;
+  }
   .hero-title {
     font-size: 1.8rem;
   }

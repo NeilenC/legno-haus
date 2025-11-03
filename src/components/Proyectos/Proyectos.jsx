@@ -35,21 +35,16 @@ const Proyectos = () => {
   return (
     <section id="proyectos" className="proyectos-section">
       <div
-        style={{
-          position: "relative",
-          margin: "0 auto",
-          paddingTop: "52px",
-          width: "calc(100% - 100px)",
-        }}
+      className="project-content"
+       
       >
         <div className="proyectos-header">
           <h2 className="project-subtitle">NUESTROS PROYECTOS</h2>
           <div className="proyectos-texts">
-            <p className="proyectos-title">
+        
+            <p className="proyectos-subtitle">
               La <span>madera</span>, el cambio del <span>presente</span>
               <br />
-            </p>
-            <p className="proyectos-subtitle">
               {" "}
               Hogares modernos, barrios revitalizados
               <br />

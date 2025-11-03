@@ -21,7 +21,7 @@ const Footer = () => {
               el nuestro en tu hogar
             </p>
           </div>
-          <div style={{ display: "flex", gap: "10rem" , marginTop: "15px"}}>
+          <div className="links-container">
             <div className="links-column">
               <h3 className="links-title">Explorar</h3>
               <ul>

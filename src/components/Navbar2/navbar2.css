@@ -1,7 +1,4 @@
-/* Barra de navegación */
 .barra-navegacion {
-  /* backdrop-filter: blur(10px); */
-  /* -webkit-backdrop-filter: blur(10px); */
   background-color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   display: flex;
@@ -31,6 +28,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  /* ensure list items are vertically centered inside the navbar */
+  align-items: center;
 }
 
 nav ul li a {
@@ -42,6 +41,8 @@ nav ul li a {
   position: relative;
   transition: all 0.3s ease;
   padding: 0.5rem 0;
+
+
 }
 
 nav ul li a::after {
@@ -53,6 +54,16 @@ nav ul li a::after {
   height: 2px;
   background-color: var(--primary-color);
   transition: width 0.3s ease;
+}
+
+/* Remove the underline effect for the last item (Contacto) */
+nav ul li:last-child a::after {
+  display: none;
+}
+
+/* Also prevent hover color/underline change on the last item */
+nav ul li:last-child a:hover {
+  color: inherit;
 }
 
 nav ul li a:hover {

@@ -19,9 +19,6 @@ export default function HomeComponent2() {
         <section className="seccion-hero">
           <div className="texto-hero">
             <div className="logo-leyenda">
-                {/* TU <span>ENFOQUE </span>EN TUS SUEÑOS
-                <br />
-                EL NUESTRO EN TU<span> HOGAR</span> */}
                 <p> Tu enfoque en tus sueños</p>
                 <p style={{fontWeight: 300, fontSize: '30px '}}> el nuestro en tu hogar</p>
             </div>
