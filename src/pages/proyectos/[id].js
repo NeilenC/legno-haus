@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { useBreakpoint } from "../../../Hook/useBreakpoint";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import "./projectStyles.css";
+// import "./projectStyles.css";
 import projects from "../../utils/projects.json";
 import SEO from "../../components/SEO";
 import Footer from "@/components/Footer/Footer";
@@ -84,7 +84,7 @@ const ProjectPage = () => {
         description={project.og_description || "Proyecto Legno Haus"}
         image={project.images?.[0]}
         canonical={`${
-          process.env.NEXT_PUBLIC_SITE_URL || "https://legno-haus.example"
+          process.env.NEXT_PUBLIC_SITE_URL || "http://legnohaus.com.ar"
         }/proyectos/${project.id}`}
       />
 

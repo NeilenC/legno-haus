@@ -9,7 +9,7 @@ import {
   faRocket,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
-import "./beneficios.css";
+// import "./beneficios.css";
 import ExperienceIcon from "../../commons/ExperienceIcon";
 import ProfessionalIcon from "../../commons/ProfessionalIcon";
 import FinishesIcon from "../../commons/FinishesIcon";
