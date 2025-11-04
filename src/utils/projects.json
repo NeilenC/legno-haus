@@ -3,9 +3,10 @@
     "id": 1,
     "title": "Residencias",
     "images": [
-      "/house1.png",
-      "/home.png",
-      "/living.webp"
+      "/residencia1920x1080.webp"
+    ],
+    "mobileImg": [
+      "/residencia1080x1350.webp"
     ],
     "description": "Módulos estandarizados que se combinan seg. Cada unidad se entrega lista para usar, con aislación térmica y acústica, diseño cuidado y todo pensado para que vos y tu familia vivan cómodos desde el primer día. A diferencia de las construcciones tradicionales, ofrecemos tiempos de entrega más cortos, costos controlados y un sistema constructivo confiable, pensado para durar. Nuestras viviendas son ideales para quienes buscan una solución funcional, rápida de montar sin caer en lo tradicional ni en lo costoso. Si estás buscando una forma práctica de vivir bien, sin sobrecostos ni obras interminables, Legno Haus es tu casa. Vos elegís cómo querés vivir. Nosotros lo hacemos realidad sin vueltas.",
     "long_description": "Nuestras viviendas están compuestas por módulos estandarizados que se combinan según la cantidad de metros cuadrados que necesitás. Esto permite escalar el espacio de forma simple y eficiente, adaptándose a distintas configuraciones familiares o de terreno. Podés empezar por lo esencial con un solo módulo y ampliarlo más adelante, sin romper ni volver a empezar. Cada unidad se entrega lista para usar, con aislación térmica y acústica, diseño cuidado y todo pensado para que vos y tu familia vivan cómodos desde el primer día. A diferencia de las construcciones tradicionales, ofrecemos tiempos de entrega más cortos, costos controlados y un sistema constructivo confiable, pensado para durar. Nuestras viviendas son ideales para quienes buscan una solución funcional, rápida de montar sin caer en lo tradicional ni en lo costoso. Si estás buscando una forma práctica de vivir bien, sin sobrecostos ni obras interminables, Legno Haus es tu casa. Vos elegís cómo querés vivir. Nosotros lo hacemos realidad sin vueltas.",
@@ -16,9 +17,10 @@
     "id": 2,
     "title": "Desarrollo Inmobiliario",
     "images": [
-      "/middle.jpeg",
-      "/house-inmo.webp",
-      "/home-background.jpeg"
+      "/inmobiliario1920x1080.webp"
+    ],
+       "mobileImg": [
+      "/inmobiliario1080x1350.webp"
     ],
     "description": "Una alternativa ágil y escalable para para proyectos inmobiliarios.  Legno Haus es ideal para desarrollos que buscan diferenciarse con una estética limpia, soluciones sustentables y una construcción eficiente. Al trabajar con módulos prefabricados y un proceso constructivo industrializado.",
     "long_description": "Una alternativa ágil y escalable para para proyectos inmobiliarios. Nuestros módulos permiten desarrollar conjuntos habitacionales completos con rapidez y uniformidad, manteniendo una estética cuidada y una ejecución eficiente. Ya sea para lotes individuales, barrios cerrados o emprendimientos urbanos, ofrecemos una alternativa constructiva moderna, adaptable y sustentable que simplifica la gestión del proyecto desde el inicio hasta la entrega. Legno Haus es ideal para desarrollos que buscan diferenciarse con una estética limpia, soluciones sustentables y una construcción eficiente. Al trabajar con módulos prefabricados y un proceso constructivo industrializado, reducimos los imprevistos de obra, permitiendo entregar más rápido el proyecto, con mayor control de calidad y menor impacto ambiental. Si estás desarrollando un proyecto inmobiliario, en Legno Haus tenemos la solución para que construyas más, mejor y en menos tiempo.",
@@ -29,9 +31,10 @@
     "id": 3,
     "title": "Turismo",
     "images": [
-      "/house-beach.webp",
-      "/room.webp",
-      "/house-img.webp"
+      "/turismo1920x1080.webp"
+    ],
+       "mobileImg": [
+"/turismo1080x1350.webp"
     ],
     "description": "Los módulos Legno Haus son perfectos para proyectos turísticos: cabañas, lodges, glampings o refugios.",
     "long_description": "Los módulos Legno Haus son perfectos para proyectos turísticos: cabañas, lodges, glampings o refugios. Nuestras construcciones son ideales para entornos naturales y turísticos por su bajo impacto ambiental, diseño personalizado y rápida instalación; son una solución para emprendimientos que buscan combinar estética, sustentabilidad y confort para sus huéspedes. Su estructura modular permite instalarse en terrenos complejos sin dañar el entorno, integrándose con el paisaje y adaptándose al estilo de tu propuesta ofreciendo confort, aislamiento térmico y una estética minimalista. Además, podés ampliarlos, replicarlos o incluso reubicarlos fácilmente a medida que crece tu demanda, sin frenar tu operación. En turismo, el tiempo de puesta en marcha y la experiencia del usuario son clave. Es una solución práctica, durable y adaptable, ideal para desarrollos turísticos en zonas rurales o naturales que buscan destacarse sin comprometer el entorno. En Legno Haus hacemos que tu emprendimiento esté listo para recibir huéspedes en tiempo récord, con diseño y confort que marcan la diferencia.",
@@ -42,9 +45,10 @@
     "id": 4,
     "title": "Oficinas",
     "images": [
-      "/living.webp",
-      "/home2.jpg",
-      "/window.svg"
+      "/oficina1920x1080.webp"
+    ],
+       "mobileImg": [
+"oficina1080x1350.webp"
     ],
     "description": "Nuestras unidades son una excelente solución para quienes necesitan un ambiente independiente y cómodo.",
     "long_description": "Nuestras unidades son una excelente solución para quienes necesitan un ambiente independiente y cómodo, ya sea una oficina en casa, un estudio creativo, una sala de reuniones o incluso una pequeña sala de música. Gracias a su aislación térmica y acústica, nuestras oficinas modulares ofrecen privacidad, confort y un entorno de trabajo ideal. Se instalan rápidamente, sin necesidad de construir desde cero, y se adaptan con elegancia al entorno, ya sea en tu jardín, un lote o como parte de un desarrollo comercial. Cada módulo se entrega terminado, con terminaciones de calidad. Sin obras molestas, sin interrupciones, sin sorpresas. Son espacios listos para usar, diseñados para profesionales independientes, equipos pequeños o proyectos que requieren ambientes privados y bien aislados. Una respuesta concreta para trabajar con foco, comodidad y estilo. Si necesitás un espacio de trabajo que se adapte a tu ritmo y a tu entorno, con Legno Haus lo tenés resuelto. Instalación rápida, diseño cuidado y el confort que tu proyecto merece.",
@@ -55,11 +59,13 @@
     "id": 5,
     "title": "Aire Libre",
     "images": [
-      "/techo.webp",
-      "/woods.webp",
-      "/middle.jpeg"
+      "/aire-libre1920x1080.webp",
+      "/aire-libre1920x1080.webp"
     ],
-    "description": "Legno Haus es una excelente opción para sumar espacios en exteriores: quinchos, vestuarios, salones multiuso, depósitos, aulas o zonas recreativas. Nuestros módulos están pensados para complementar entornos abiertos, integrándose al paisaje con una estética neutra y materiales durables que resisten el uso intensivo y las condiciones del clima. Además, permiten modificar o trasladar el espacio en el futuro según tus necesidades. Cuando necesitás metros cuadrados extra con funcionalidad, buena estética y mínima intervención, Legno Haus es la solución. Sumá espacio sin complicaciones. Instalamos lo que necesitás, donde lo necesitás, en tiempo récord.",
+       "mobileImg": [
+"aire-libre1080x1350.webp"
+    ],
+    "description": "Legno ios en exteriores: módulos están pensados para complementar entornos abiertos, integrándose al paisaje con una estética neutra y materiales durables que resisten el uso intensivo y las condiciones del clima. Además, permiten modificar o trasladar el espacio en el futuro según tus necesidades. Cuando necesitás metros cuadrados extra con funcionalidad, buena estética y mínima intervención, Legno Haus es la solución. Sumá espacio sin complicaciones. Instalamos lo que necesitás, donde lo necesitás, en tiempo récord.",
     "long_description": "Legno Haus es una excelente opción para sumar espacios en exteriores: quinchos, vestuarios, salones multiuso, depósitos, aulas o zonas recreativas. Nuestros módulos están pensados para complementar entornos abiertos, integrándose al paisaje con una estética neutra y materiales durables que resisten el uso intensivo y las condiciones del clima. Es una forma simple, rápida y ordenada de ampliar el espacio útil sin obras largas, grandes movimientos de suelo ni costos excesivos. Se adaptan a funciones diversas y pueden instalarse tanto en contextos urbanos como naturales, sin afectar lo ya construido. Además, permiten modificar o trasladar el espacio en el futuro según tus necesidades. Cuando necesitás metros cuadrados extra con funcionalidad, buena estética y mínima intervención, Legno Haus es la solución. Sumá espacio sin complicaciones. Instalamos lo que necesitás, donde lo necesitás, en tiempo récord.",
     "og_title": "Aire Libre — Legno Haus",
     "og_description": "Espacios exteriores modulares: quinchos, salones y depósitos con instalación rápida y mínima intervención."
@@ -68,9 +74,10 @@
     "id": 6,
     "title": "Viviendas sociales",
     "images": [
-      "/house-inmo.webp",
-      "/home-banner.jpeg",
-      "/house1.png"
+      "/social1920x1080.webp"
+    ],
+       "mobileImg": [
+"soci"
     ],
     "description": "Legno Haus ofrece una solución concreta y eficiente para programas de vivienda social. Nuestros módulos permiten responder con rapidez y escala a las necesidades habitacionales, con estándares de calidad, diseño cuidado y durabilidad comprobada. Gracias a su fabricación estandarizada e industrializada, es posible producir e instalar múltiples unidades en poco tiempo, asegurando previsibilidad en tiempos, costos y calidad de ejecución. Las viviendas se componen por módulos que pueden ampliarse o adaptarse a distintos contextos geográficos y configuraciones familiares. El sistema modular permite acompañar programas habitacionales con soluciones flexibles, resistentes y listas para habitar. Son ideales para municipios, provincias o desarrolladores que buscan resolver el acceso a la vivienda con una alternativa moderna, sustentable y rápida de implementar. Con Legno Haus, es posible construir más, en menos tiempo, con mejores resultados. Una respuesta real a una necesidad urgente.",
     "long_description": "Legno Haus ofrece una solución concreta y eficiente para programas de vivienda social. Nuestros módulos permiten responder con rapidez y escala a las necesidades habitacionales, con estándares de calidad, diseño cuidado y durabilidad comprobada. Gracias a su fabricación estandarizada e industrializada, es posible producir e instalar múltiples unidades en poco tiempo, asegurando previsibilidad en tiempos, costos y calidad de ejecución. Las viviendas se componen por módulos que pueden ampliarse o adaptarse a distintos contextos geográficos y configuraciones familiares. El sistema modular permite acompañar programas habitacionales con soluciones flexibles, resistentes y listas para habitar. Son ideales para municipios, provincias o desarrolladores que buscan resolver el acceso a la vivienda con una alternativa moderna, sustentable y rápida de implementar. Con Legno Haus, es posible construir más, en menos tiempo, con mejores resultados. Una respuesta real a una necesidad urgente.",

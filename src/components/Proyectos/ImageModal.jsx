@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import Image from 'next/image';
-import { useBreakpoint } from '../../../Hook/useBreakpoint';
+import React, { useEffect } from "react";
+import Image from "next/image";
+import { useBreakpoint } from "../../../Hook/useBreakpoint";
 
 const ImageModal = ({ isOpen, onClose, imageUrl, title }) => {
-  const breakpoint = useBreakpoint()
+  const breakpoint = useBreakpoint();
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
       return () => {
-        document.body.style.overflow = '';
+        document.body.style.overflow = "";
       };
     }
   }, [isOpen]);
@@ -17,12 +17,14 @@ const ImageModal = ({ isOpen, onClose, imageUrl, title }) => {
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h2 className="modal-title">{title}</h2>
-          <button className="close-button" onClick={onClose}>×</button>
+          <button className="close-button" onClick={onClose}>
+            ×
+          </button>
         </div>
-        
+
         <div className="image-scroll-container">
           <div className="modal-image-wrapper">
             <Image
@@ -35,12 +37,12 @@ const ImageModal = ({ isOpen, onClose, imageUrl, title }) => {
             />
           </div>
         </div>
-      {breakpoint == 'mobile' && 
-        <div className="rotate-message">
-          <div className="rotate-icon">↻</div>
-          <p>Gira tu dispositivo para ver mejor la imagen</p>
-        </div>
-        }  
+        {breakpoint == "mobile" && (
+          <div className="rotate-message">
+            <div className="rotate-icon">↻</div>
+            <p>Gira tu dispositivo para ver mejor la imagen</p>
+          </div>
+        )}
       </div>
     </div>
   );
