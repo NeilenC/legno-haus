@@ -91,10 +91,10 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Legno Haus"
-        description="Legno Haus — Construcciones de madera sostenibles"
-        image="/logo.png"
-        canonical={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://legno-haus.example'}/`}
+        title="Legno Haus "
+        description="Construí de forma rápida, sustentable y accesible. Casas modulares de madera con diseño moderno, tecnología limpia y espacios pensados para disfrutar."
+        image="/background.webp"
+        canonical={`${process.env.NEXT_PUBLIC_SITE_URL || 'http://legnohaus.com.ar'}/`}
       />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

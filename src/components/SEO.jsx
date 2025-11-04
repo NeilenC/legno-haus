@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const SEO = ({ title, description, image, canonical }) => {
   const router = useRouter()
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://legno-haus.example'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'www.legnohaus.com.ar'  || 'https://legnohaus.com.ar'
   const url = canonical || `${siteUrl}${router.asPath}`
   const imageUrl = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : `${siteUrl}/logo.png`
 
