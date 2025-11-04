@@ -9,7 +9,7 @@ import '../components/Footer/footer.css'
 import '../components/Proyectos/modal.css';
 import '../components/Navbar2/navbar2.css'
 import '../components/MiddleComponent/middleComponent.css'
-import '../pages/proyectos/project.module.css'
+import '../pages/proyectos/projectStyles.css'
 
 
 export default function App({ Component, pageProps }) {

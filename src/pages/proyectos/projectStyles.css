@@ -1,32 +1,8 @@
-/* Design System - Variables consistentes */
-:root {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #ffffff;
-  --bg-overlay: rgba(255, 255, 255, 0.95);
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-  --accent-primary: #a66514;
-  --accent-secondary: #fb923c;
-  --border-light: #e2e8f0;
-  --border-medium: #cbd5e1;
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.1);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.1);
-  --shadow-lg: 0 10px 25px -3px rgba(15, 23, 42, 0.1);
-  --shadow-xl: 0 20px 50px -12px rgba(15, 23, 42, 0.15);
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 20px;
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
-}
 
 /* Reset y base */
 .projectPage {
   background: #ededed;
-  color: var(--text-primary);
+  color: #0f172a;
   font-family: inherit;
   line-height: 1.6;
   margin: 0 auto;
@@ -50,7 +26,6 @@
   flex-direction: column;
   align-items: flex-start;
   z-index: 20;
-  display: flex;
   padding: 0.5rem 1.5rem;
   width: auto;
 }
@@ -96,7 +71,7 @@
   max-height: 100vh !important;
   object-fit: cover;
   object-position: center center; /* center the crop vertically and horizontally */
-  transition: transform var(--transition-slow) cubic-bezier(0.2, 0.9, 0.2, 1);
+  transition: transform 0.5s ease cubic-bezier(0.2, 0.9, 0.2, 1);
 }
 
 .navButton:hover {
@@ -124,8 +99,8 @@
 .loadingSpinner {
   width: 48px;
   height: 48px;
-  border: 3px solid var(--border-light);
-  border-top: 3px solid var(--accent-primary);
+  border: 3px solid #e2e8f0;
+  border-top: 3px solid #a66514;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 1rem;
@@ -157,7 +132,7 @@
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.42);
   backdrop-filter: blur(6px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
   cursor: pointer;
 }
 
@@ -212,7 +187,7 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: 999px;
   z-index: 2;
-  transition: all 250ms var(--transition-normal);
+  transition: all 250ms 0.3s ease;
   box-shadow: 0 2px 8px rgba(2, 6, 23, 0.35);
 }
 
@@ -253,7 +228,7 @@
 .infoCard {
   position: relative;
   overflow: hidden;
-  transition: all var(--transition-normal);
+  transition: all 0.3s ease;
 }
 
 /* Efecto de borde sutil superior */
@@ -274,7 +249,7 @@
 
 /* Título delicado */
 .infoCard h2 {
-  color: var(--text-primary);
+  color: #0f172a;
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: none;
@@ -295,10 +270,10 @@
   height: 1px;
   background: linear-gradient(
     90deg,
-    var(--accent-primary) 0%,
+    #a66514 0%,
     transparent 100%
   );
-  transition: width var(--transition-normal);
+  transition: width 0.3s ease;
 }
 
 .infoCard:hover h2::after {
@@ -333,11 +308,11 @@
 
 /* Efectos de hover suaves para el texto */
 .description {
-  transition: color var(--transition-normal);
+  transition: color 0.3s ease;
 }
 
 .infoCard:hover .description {
-  color: var(--text-primary);
+  color: #0f172a;
 }
 
 /* Responsive para diseño delicado */
@@ -345,7 +320,7 @@
   .infoCard {
     padding: 1.5rem;
     margin: 0 0.5rem;
-    border-radius: var(--radius-lg);
+    border-radius: 16px;
   }
 
   .infoCard h2 {
@@ -428,8 +403,8 @@
 
 .carouselWrapper {
   position: relative;
-  background: var(--bg-secondary);
-  box-shadow: var(--shadow-xl);
+  background: #ffffff;
+  box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.15);
   overflow: hidden;
   margin-bottom: 1.5rem;
   height: 100vh;
@@ -524,20 +499,10 @@
   }
 }
 
-/* Modo de alto contraste y reducción de movimiento */
-@media (prefers-contrast: high) {
-  :root {
-    --border-light: #000000;
-    --shadow-lg: 0 0 0 1px #000000;
-  }
-}
+
 
 @media (prefers-reduced-motion: reduce) {
-  :root {
-    --transition-fast: 0.01s;
-    --transition-normal: 0.01s;
-    --transition-slow: 0.01s;
-  }
+
 
   .carouselImage,
   .thumbnail,
@@ -567,6 +532,6 @@
 .navButton:focus-visible,
 .thumbnail:focus-visible,
 .backButton:focus-visible {
-  outline: 2px solid var(--accent-primary);
+  outline: 2px solid #a66514;
   outline-offset: 2px;
 }
