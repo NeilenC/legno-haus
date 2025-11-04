@@ -37,7 +37,7 @@ const ProjectPage = () => {
     return () => clearTimeout(timer);
   }, [id]);
 
-  const pageTitle = project ? `Legno Haus | ${project.title}` : "Legno Haus";
+  const pageTitle = project ? ` ${project.title} | Legno Haus` : "Legno Haus";
 
   const images =
     breakpoint === "mobile"
