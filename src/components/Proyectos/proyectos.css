@@ -191,16 +191,15 @@
 
 @media (max-width: 700px) {
   .proyectos-section {
-    padding-block: 40px;
-    /* background-color: #ededed; */
+    padding-top: 120px; 
   }
 
   .project-content {
-  position: relative;
-  margin: 0 auto;
-  padding-block: 0 ;
-  width: calc(100% - 60px);
-}
+    position: relative;
+    margin: 0 auto;
+    padding-block: 0;
+    width: calc(100% - 60px);
+  }
 
   .proyectos-title {
     font-size: 1.7rem;

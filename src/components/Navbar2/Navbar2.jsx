@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { useBreakpoint } from "../../../Hook/useBreakpoint";
 
 const Navbar2 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const breakpoint = useBreakpoint();
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <header className="barra-navegacion">
-      
       <Image
         src="/logo-lineas.webp"
         alt="Legno Haus Logo"
-        width={93}
-        height={120}
+        width={breakpoint === "mobile" ? 70 : 93}
+        height={breakpoint === "mobile" ? 98 : 120}
       />
 
       <button className="menu-toggle" onClick={toggleMenu}>
@@ -44,10 +44,7 @@ const Navbar2 = () => {
           </li>
           <li>
             <a href="#contacto" onClick={toggleMenu}>
-              <button
-                className="cta-button secondary"
-                onClick={toggleMenu}
-              >
+              <button className="cta-button secondary" onClick={toggleMenu}>
                 Contacto
               </button>
             </a>

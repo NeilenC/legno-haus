@@ -66,21 +66,16 @@ const Beneficios = () => {
           <p className="nosotros-text">
             {/* Construcciones rápidas, sustentables y accesibles. Casas modulares
             de madera con diseño innovador y tecnología avanzada. */}
-            Rápidas, sustentables y accesibles: nuestras casas modulares de
-            madera combinan diseño, tecnología y confort para que empieces a
-            disfrutar antes tu nuevo hogar.
+            Nuestras casas modulares de madera están pensadas para que disfrutes
+            el proceso tanto como el resultado: rápidas, accesibles y sin los
+            contratiempos de la obra tradicional.
           </p>
         </div>
         <div className="nosotros-image">
           <img src="/cocina-modular.webp" alt="Equipo de trabajo Novart" />
         </div>
       </div>
-      {/* <div className="section-header">
-        <h1 className="section-title">
-          <span>Beneficios</span>
-        </h1>
-      </div> */}
-
+    
       <div className="beneficios-grid">
         {beneficios.map((beneficio, index) => {
           const Icon = beneficio.icon;
@@ -103,19 +98,17 @@ const Beneficios = () => {
       <div className="nosotros-section">
         <div className="nosotros-image">
           <img
-            // src="/perspectiva.webp"
             src="/perspectiva.webp"
             alt="Equipo de trabajo Novart"
           />
         </div>
 
         <div className="nosotros-content">
-          {/* <h2 className="nosotros-title">Beneficios</h2> */}
           <h3 className="nosotros-subtitle">Espacios que crecen con vos</h3>
           <p className="nosotros-text">
-            El sistema modular permite ampliar o personalizar tu vivienda cuando
-            lo necesites. Adaptá tu espacio a cada etapa de tu vida, con la
-            calidez y eficiencia que solo la madera puede brindar.
+            En Legno Haus te ofrecemos un hogar diseñado con calidez, confort y
+            tecnología, para que vivas la comodidad de tu casa desde el primer
+            día.
           </p>
         </div>
       </div>
