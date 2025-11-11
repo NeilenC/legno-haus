@@ -16,7 +16,7 @@
   font-weight: 600;
   font-size: 28px;
   letter-spacing: 4px;
-  text-align:center
+  text-align: center;
 }
 
 .logo span {
@@ -40,9 +40,7 @@ nav ul li a {
   letter-spacing: 1px;
   position: relative;
   transition: all 0.3s ease;
-  padding: 0.5rem 0;
-
-
+  padding: 0.5rem 0 1rem 0;
 }
 
 nav ul li a::after {
@@ -84,7 +82,6 @@ nav ul li a:hover::after {
   opacity: 0;
 }
 
-
 .navbar-footer {
   transition: all 0.3s ease-in-out;
   transform: translateY(0);
@@ -118,11 +115,11 @@ nav ul li a:hover::after {
   .menu-mobile {
     display: none;
     position: absolute;
-    top: 96px;
+    top: 98px;
     background: rgba(0, 0, 0, 0.87);
     width: 100%;
     padding: 3rem 2rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.3s ease-in-out;
     z-index: 999;
   }
@@ -159,12 +156,9 @@ nav ul li a:hover::after {
   }
 }
 
-
 /* Mobile menu */
 @media (max-width: 1024px) {
   nav ul {
     gap: 3.5rem;
-
   }
 }
-

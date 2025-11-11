@@ -8,7 +8,7 @@
 }
 
 .about-section {
-  min-height: 100vh;
+  min-height: 93vh;
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
