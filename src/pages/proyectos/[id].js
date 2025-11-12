@@ -94,8 +94,8 @@ const ProjectPage = () => {
             className="carouselSection"
             aria-label="Galería de imágenes del proyecto"
           >
-            <div className="carouselContainer">
-              <div className="carouselWrapper">
+            <div className="carouselContainer" >
+              <div className="carouselWrapper" style={{ height: "100vh" }}>
                 <div className="carouselTrack">
                   <Image
                     src={images[currentIndex]}

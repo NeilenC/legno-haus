@@ -246,7 +246,7 @@
 
   .descriptionContainer {
     width: 100%;
-    height: 380px;
+    height: 320px;
     border: none;
   }
 
@@ -256,7 +256,6 @@
   }
 
   .houseDescription {
-    font-size: 18px;
     line-height: 140%;
   }
 }

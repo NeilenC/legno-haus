@@ -8,7 +8,7 @@
 }
 
 .about-section {
-  min-height: 100vh;
+  min-height: 93vh;
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
@@ -56,20 +56,16 @@
 }
 
 /* Efecto de gradiente en texto destacado */
-.highlight-gradient {
-  background: linear-gradient(135deg, var(--primary-color), #a66514);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.about-title-color {
+  color: #a66514;
   display: inline-block;
   font-weight: 500;
 }
 
 /* Subtítulo con texto blanco para contrastar con fondo oscuro */
 .section-subtitle {
-  font-size: 1.25rem;
   line-height: 1.8;
-  font-weight: 400;
+  font-weight: 300;
   /* margin: 0 auto; */
   animation: fadeIn 1s ease;
 }
@@ -125,8 +121,7 @@
 
 .text-card {
   background-color: var(--bg-color);
-  /* border: 2px solid var(--card-border); */
-  padding: 40px;
+  padding: 20px 30px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -155,7 +150,7 @@
 }
 
 .card-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: #333333;
   margin-bottom: 1.5rem;
@@ -221,9 +216,35 @@
 }
 
 @media (max-width: 480px) {
-    .about-section {
- padding-top: 40px;
+
+  .about-section {
+    padding-top: 120px;
+  }
+
+
+  .text-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: scaleY(0);
+  transition: transform 0.9s ease;
+  transform-origin: center;
 }
+
+/* Hover en desktop */
+.text-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* Efecto visible al hacer scroll (mobile o desktop) */
+.text-card.active::before {
+  transform: scaleY(1);
+}
+
 
 .about-container {
     width: calc(100% - 60px);
@@ -257,6 +278,6 @@
   }
 
   .text-card {
-    padding: 25px;
+    padding: 8px 25px;
   }
 }

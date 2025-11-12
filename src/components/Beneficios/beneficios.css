@@ -100,7 +100,7 @@
 
 @media (max-width: 768px) {
   .beneficios-section {
-    padding: 40px 15px;
+    padding: 130px 15px;
   }
 
   .section-title {
@@ -241,6 +241,7 @@
   .nosotros-content {
     padding: 30px 20px;
   }
+
 
   .nosotros-title {
     font-size: 1.8rem;
