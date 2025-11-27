@@ -72,7 +72,7 @@ const Beneficios = () => {
           </p>
         </div>
         <div className="nosotros-image">
-          <img src="/cocina-modular.webp" alt="Equipo de trabajo Novart" />
+          <img src="/corte_cocina_2.webp" alt="Equipo de trabajo Novart" />
         </div>
       </div>
     

@@ -45,16 +45,27 @@
 
 .logo-leyenda {
   margin-top: 4rem;
-  font-weight: 400;
+  font-weight:400;
   opacity: 0.95;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 3px;
   line-height: 1.5;
+  text-transform: uppercase;
 }
+
+.logo-leyenda span {
+  font-weight: 700;
+}
+
+
+  .sub-leyenda{
+   font-weight: 300;
+    font-size: 30px;
+  }
 
 /* Botones CTA */
 .cta-section {
@@ -164,10 +175,15 @@
 
 @media (max-width: 480px) {
 .logo-leyenda {
-font-size: 40px;
+        font-size: 35px;
 }
   .leyenda {
     font-size: 1.8rem;
+  }
+
+  .sub-leyenda{
+   font-weight: 400;
+    font-size: 20px;
   }
 
   .logo-leyenda h1::after {

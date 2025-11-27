@@ -7,7 +7,9 @@
   line-height: 1.6;
   margin: 0 auto;
   animation: fadeUp 0.6s ease-out;
-  height: 1100px;
+  min-height: 100vh; /* permite crecer pero asegura el alto de pantalla */
+  height: auto !important;
+  padding-bottom: 2rem;
 }
 
 /* Carrusel */
@@ -406,7 +408,6 @@
   background: #ffffff;
   box-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.15);
   overflow: hidden;
-  margin-bottom: 1.5rem;
   height: 100vh;
   max-height: 100vh;
   animation: fadeUp 0.8s ease-out 0.2s both;

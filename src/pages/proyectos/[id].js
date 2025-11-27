@@ -11,7 +11,7 @@ import Footer from "@/components/Footer/Footer";
 import Lightbox from "yet-another-react-lightbox";
 import { Zoom } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/styles.css";
-
+import ProjectDescription from "../../components/PorqueElegirnos/ProjectDescription";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -70,7 +70,8 @@ const ProjectPage = () => {
         <p>El proyecto que buscas no existe o ha sido removido.</p>
         <button
           onClick={() => router.push("/proyectos")}
-          className="backButton" >
+          className="backButton"
+        >
           Volver a proyectos
         </button>
       </div>
@@ -94,7 +95,7 @@ const ProjectPage = () => {
             className="carouselSection"
             aria-label="Galería de imágenes del proyecto"
           >
-            <div className="carouselContainer" >
+            <div className="carouselContainer">
               <div className="carouselWrapper" style={{ height: "100vh" }}>
                 <div className="carouselTrack">
                   <Image
@@ -117,13 +118,12 @@ const ProjectPage = () => {
                           <span
                             key={idx}
                             className={`dot ${
-                              idx === currentIndex ? 'dotActive' : ""
+                              idx === currentIndex ? "dotActive" : ""
                             }`}
                           />
                         ))}
                       </div>
 
-                      
                       <div className="arrows">
                         <button
                           onClick={handlePrevious}
@@ -220,15 +220,19 @@ const ProjectPage = () => {
               </div>
             </div>
           </section>
-
+          {/* 
           <div className="overlayDescription">
             {(project.subtitle || project.description) && (
               <p>{project.subtitle || project.long_description}</p>
             )}
-          </div>
+          </div> */}
+
+          <ProjectDescription
+            subtitle={project.subtitle}
+            description={project.long_description || project.description}
+          />
         </div>
       </main>
-      <Footer />
     </>
   );
 };

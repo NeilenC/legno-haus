@@ -19,8 +19,8 @@ export default function HomeComponent2() {
         <section className="seccion-hero">
           <div className="texto-hero">
             <div className="logo-leyenda">
-                <p> Tu enfoque en tus sueños</p>
-                <p style={{fontWeight: 300, fontSize: '30px '}}> el nuestro en tu hogar</p>
+                <p> Tu enfoque en tus <span>sueños</span></p>
+                <p  className="sub-leyenda"> el nuestro en tu <span>hogar</span></p>
             </div>
             {/* <div className="cta-section">
               <button

@@ -169,6 +169,7 @@ export default function Home() {
       >
         <WhatsappIcon />
       </Link>
+
     </>
   );
 }

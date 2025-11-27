@@ -1,0 +1,25 @@
+.projectDescriptionSection {
+  height: auto;
+  display: flex;
+  margin-left: 3.8rem;
+}
+
+.projectDescriptionContent {
+  max-width: 90%;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: white;
+  background-color: #000000b9;
+  padding: 1rem;
+}
+
+.projectDescriptionContent p {
+  white-space: pre-line;
+  margin-bottom: 0.4rem; /* o el valor que quieras */
+}
+
+@media (max-width: 768px) {
+  .projectDescriptionSection {
+    margin-left: 0.95rem;
+  }
+}

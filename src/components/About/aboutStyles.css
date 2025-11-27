@@ -59,14 +59,14 @@
 .about-title-color {
   color: #a66514;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Subtítulo con texto blanco para contrastar con fondo oscuro */
 .section-subtitle {
   line-height: 1.8;
-  font-weight: 300;
-  /* margin: 0 auto; */
+  font-weight: 400;
+  color: #333333;
   animation: fadeIn 1s ease;
 }
 

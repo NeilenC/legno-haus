@@ -15,6 +15,22 @@ const PorqueElegirnos = () => {
 
   const options = [
     {
+      id: 2,
+      img: "/sustentabilidad.jpg",
+      mobileImg: "/sustentabilidad.jpg",
+      title: "Sustentabilidad",
+      description:
+        "Utilizamos madera certificada, un recurso naturalmente renovable y de bajo impacto ambiental. Apostamos por la construcción responsable, optimizando materiales, sin desperdicios y reduciendo la huella ecológica, para que cada hogar sea sinónimo de armonía con el entorno.",
+    },
+        {
+      id: 3,
+      img: "/funcionalidad.webp",
+      mobileImg: "/funcionalidad.webp",
+      title: "Funcionalidad",
+      description:
+        "Cada espacio está pensado para brindar confort, optimización del área y una experiencia de vida moderna, asegurando que tu hogar te acompañe en cada etapa de tu vida y la de tu familia.",
+    },
+    {
       id: 1,
       img: "/inmobiliario1350x1080.webp",
       mobileImg: "/inmobiliario1080x1350.webp",
@@ -22,46 +38,32 @@ const PorqueElegirnos = () => {
       description:
         "En LegnoHaus, no solo construimos viviendas, creamos soluciones sostenibles, flexibles y accesibles. Cada módulo está diseñado para ofrecer calidad de vida, asegurando un hogar que evoluciona con vos.",
     },
-    {
-      id: 2,
-      img: "/aire-libre1350x1080.webp",
-      mobileImg: "/aire-libre1080x1350.webp",
-      title: "Sustentabilidad",
-      description:
-        "Utilizamos madera certificada, un recurso naturalmente renovable y de bajo impacto ambiental. Apostamos por la construcción responsable, optimizando materiales, sin desperdicios y reduciendo la huella ecológica, para que cada hogar sea sinónimo de armonía con el entorno.",
-    },
-    {
-      id: 3,
-      img: "/oficina1080x1350.webp",
-      mobileImg: "/oficina1350x1080.webp",
-      title: "Funcionalidad",
-      description:
-        "Cada espacio está pensado para brindar confort, optimización del área y una experiencia de vida moderna, asegurando que tu hogar te acompañe en cada etapa de tu vida y la de tu familia.",
-    },
-    {
-      id: 4,
-      img: "/residencia1080x1350.webp",
-      mobileImg: "/residencial1350x1080.webp",
-      title: "Construcción transparente",
-      description:
-        "Eliminamos los tiempos de obra prolongados e imprevistos. Gracias a un proceso de pre- fabricación garantizamos rapidez, costos controlados y una experiencia sin complicaciones.",
-    },
-    {
+        {
       id: 5,
-      img: "/social1350x1080.webp",
-      mobileImg: "/social1080x1350.webp",
+      img: "/impacto-social.jpg",
+      mobileImg: "/impacto-social.jpg",
       title: "Impacto social y comunitario",
       description:
         "Elegir LegnoHaus es ser parte de un cambio. No solo revitalizamos barrios y mejoramos el acceso a viviendas de calidad, sino que promovemos comunidades más sostenibles y con identidad propia.",
     },
     {
+      id: 4,
+      img: "/20251125_1847_image.png",
+      mobileImg: "/20251125_1859_image.png",
+      title: "Construcción transparente",
+      description:
+        "Eliminamos los tiempos de obra prolongados e imprevistos. Gracias a un proceso de pre- fabricación garantizamos rapidez, costos controlados y una experiencia sin complicaciones.",
+    },
+    {
       id: 6,
-      img: "/house-beach.webp",
-      mobileImg: "/house-beach.webp",
+      img: "/acompañamiento-personalizado.jpg",
+      mobileImg: "/acompañamiento-personalizado.jpg",
       title: "Acompañamiento personalizado",
       description:
         "Desde el primer contacto hasta la entrega de tu hogar, te guiamos en cada etapa. Nos encargamos de los detalles para que tu única preocupación sea disfrutar tu nuevo hogar.",
     },
+
+
   ];
 
   const toggleDescription = (id) => {
