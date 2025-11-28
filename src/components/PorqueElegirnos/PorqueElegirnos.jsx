@@ -22,7 +22,7 @@ const PorqueElegirnos = () => {
       description:
         "Utilizamos madera certificada, un recurso naturalmente renovable y de bajo impacto ambiental. Apostamos por la construcción responsable, optimizando materiales, sin desperdicios y reduciendo la huella ecológica, para que cada hogar sea sinónimo de armonía con el entorno.",
     },
-        {
+    {
       id: 3,
       img: "/funcionalidad.webp",
       mobileImg: "/funcionalidad.webp",
@@ -38,10 +38,10 @@ const PorqueElegirnos = () => {
       description:
         "En LegnoHaus, no solo construimos viviendas, creamos soluciones sostenibles, flexibles y accesibles. Cada módulo está diseñado para ofrecer calidad de vida, asegurando un hogar que evoluciona con vos.",
     },
-        {
+    {
       id: 5,
-      img: "/impacto-social.jpg",
-      mobileImg: "/impacto-social.jpg",
+      img: "/impacto-social-recorte.webp",
+      mobileImg: "/impacto-social-recorte.webp",
       title: "Impacto social y comunitario",
       description:
         "Elegir LegnoHaus es ser parte de un cambio. No solo revitalizamos barrios y mejoramos el acceso a viviendas de calidad, sino que promovemos comunidades más sostenibles y con identidad propia.",
@@ -62,8 +62,6 @@ const PorqueElegirnos = () => {
       description:
         "Desde el primer contacto hasta la entrega de tu hogar, te guiamos en cada etapa. Nos encargamos de los detalles para que tu única preocupación sea disfrutar tu nuevo hogar.",
     },
-
-
   ];
 
   const toggleDescription = (id) => {
