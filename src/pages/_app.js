@@ -1,18 +1,26 @@
 import "@/styles/globals.css";
-import '../components/About/aboutStyles.css'
-import '../components/Beneficios/beneficios.css'
-import '../components/Contacto/contacto.css'
-import '../components/Home/Home2/home2styles.css'
+import "../components/About/aboutStyles.css";
+import "../components/Beneficios/beneficios.css";
+import "../components/Contacto/contacto.css";
+import "../components/Home/Home2/home2styles.css";
 // import '../components/PorqueElegirnos/porqueElegirnos.css'
 import "../components/PorqueElegirnos/projectDescription.css";
-import '../components/Proyectos/proyectos.css'
-import '../components/Footer/footer.css'
-import '../components/Proyectos/modal.css';
-import '../components/Navbar2/navbar2.css'
-import '../components/MiddleComponent/middleComponent.css'
-import '../pages/proyectos/projectStyles.css'
-
+import "../components/Proyectos/proyectos.css";
+import "../components/Footer/footer.css";
+import "../components/Proyectos/modal.css";
+import "../components/Navbar2/navbar2.css";
+import "../components/MiddleComponent/middleComponent.css";
+import "../pages/proyectos/projectStyles.css";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.webp" type="image/webp" />
+      </Head>
+
+      <Component {...pageProps} />
+    </>
+  );
 }

@@ -2,7 +2,6 @@ import WhatsappIcon from "@/commons/WhatsappIcon";
 import About from "@/components/About/About";
 import Beneficios from "@/components/Beneficios/Beneficios";
 import Contacto from "@/components/Contacto/Contacto";
-import Footer from "@/components/Footer/Footer";
 import Home2 from "@/components/Home/Home2/Home2";
 import Navbar2 from "@/components/Navbar2/Navbar2";
 import PorqueElegirnos from "@/components/PorqueElegirnos/PorqueElegirnos";
@@ -98,7 +97,7 @@ export default function Home() {
       />
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.webp"  type="image/webp" />
       </Head>
 
       {/* {showNavbar2 && <Navbar2 />} */}
