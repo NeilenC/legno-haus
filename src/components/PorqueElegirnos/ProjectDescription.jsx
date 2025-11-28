@@ -1,5 +1,4 @@
 import React from "react";
-import "./projectDescription.css";
 
 const ProjectDescription = ({ subtitle, description }) => {
   const text = subtitle || description;
