@@ -26,7 +26,6 @@
 
 .contact-form-container {
   background: rgba(27, 26, 26, 0.67);
-
 }
 
 /* Agrega esto a tu contacto.css */
@@ -119,10 +118,11 @@
 
 .contact-form-container {
   width: calc(100% - 80px);
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-block: 50px 80px;
+  /* padding-block: 50px 80px; */
 }
 
 .form-banner {
@@ -211,7 +211,6 @@
 .submit-btn:hover {
   background-color: #4d4600;
 }
-
 
 .arrow-icon {
   font-size: 1.2rem;

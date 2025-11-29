@@ -1,11 +1,10 @@
 .mainContainer {
-  height: auto;
+  height: 100%;
   display: flex;
   align-content: center;
   padding-top: 50px;
   overflow: hidden;
   background: var(--bg-color);
-  /* Use site default font (Raleway) */
   font-family: inherit;
 }
 
