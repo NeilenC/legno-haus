@@ -65,7 +65,7 @@
 /* Subtítulo con texto blanco para contrastar con fondo oscuro */
 .section-subtitle {
   line-height: 1.8;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #333333;
   animation: fadeIn 1s ease;
@@ -151,7 +151,7 @@
 }
 
 .card-content p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #333333;
   margin-bottom: 1.5rem;
