@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Residencias",
     "images": [
-      "/residencia1920x1080.webp"
+      "/residencias.webp"
     ],
     "mobileImg": [
       "/residencia1080x1350.webp"
@@ -62,7 +62,6 @@
     "id": 5,
     "title": "Aire Libre",
     "images": [
-      "/aire-libre1920x1080.webp",
       "/aire-libre1920x1080.webp"
     ],
        "mobileImg": [
@@ -77,10 +76,10 @@
     "id": 6,
     "title": "Viviendas sociales",
     "images": [
-      "/social1920x1080.webp"
+      "/viviendas-sociales.webp"
     ],
        "mobileImg": [
-"soci"
+   "/viviendas-sociales.webp"
     ],
     "description": "Legno Haus ofrece una solución concreta y eficiente para programas de vivienda social. Nuestros módulos permiten responder con rapidez y escala a las necesidades habitacionales, con estándares de calidad, diseño cuidado y durabilidad comprobada. Gracias a su fabricación estandarizada e industrializada, es posible producir e instalar múltiples unidades en poco tiempo, asegurando previsibilidad en tiempos, costos y calidad de ejecución. Las viviendas se componen por módulos que pueden ampliarse o adaptarse a distintos contextos geográficos y configuraciones familiares. El sistema modular permite acompañar programas habitacionales con soluciones flexibles, resistentes y listas para habitar. Son ideales para municipios, provincias o desarrolladores que buscan resolver el acceso a la vivienda con una alternativa moderna, sustentable y rápida de implementar. Con Legno Haus, es posible construir más, en menos tiempo, con mejores resultados. Una respuesta real a una necesidad urgente.",
     "long_description": "Legno Haus ofrece una solución concreta y eficiente para programas de vivienda social. Nuestros módulos permiten responder con rapidez y escala a las necesidades habitacionales, con estándares de calidad, diseño cuidado y durabilidad comprobada. Gracias a su fabricación estandarizada e industrializada, es posible producir e instalar múltiples unidades en poco tiempo, asegurando previsibilidad en tiempos, costos y calidad de ejecución. Las viviendas se componen por módulos que pueden ampliarse o adaptarse a distintos contextos geográficos y configuraciones familiares. El sistema modular permite acompañar programas habitacionales con soluciones flexibles, resistentes y listas para habitar. Son ideales para municipios, provincias o desarrolladores que buscan resolver el acceso a la vivienda con una alternativa moderna, sustentable y rápida de implementar. Con Legno Haus, es posible construir más, en menos tiempo, con mejores resultados. Una respuesta real a una necesidad urgente.",

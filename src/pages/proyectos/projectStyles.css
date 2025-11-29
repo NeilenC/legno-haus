@@ -1,4 +1,3 @@
-
 /* Reset y base */
 .projectPage {
   background: #ededed;
@@ -14,6 +13,33 @@
 /* Carrusel */
 .carouselSection {
   width: 100%;
+}
+
+.backHomeButton {
+  z-index: 25;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  background: #ffffff0f;
+  border: 1px solid #ffffff1f;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.backHomeButton:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.backHomeButton:active {
+  transform: scale(0.95);
 }
 
 /* Overlay en la esquina inferior izquierda con título y descripción corta */
@@ -69,7 +95,7 @@
 .carouselImage {
   width: 100% !important;
   height: 100vh;
-  max-height: 100vh ;
+  max-height: 100vh;
   object-fit: cover;
   object-position: center center; /* center the crop vertically and horizontally */
   transition: transform 0.5s ease cubic-bezier(0.2, 0.9, 0.2, 1);
@@ -269,11 +295,7 @@
   left: 0;
   width: 40px;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    #a66514 0%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg, #a66514 0%, transparent 100%);
   transition: width 0.3s ease;
 }
 
@@ -336,8 +358,8 @@
   .overlayTitle {
     width: auto;
     max-width: 250px;
-  line-height: 1.1;
-}
+    line-height: 1.1;
+  }
 
   .overlayDescription {
     left: 1rem;
@@ -499,11 +521,7 @@
   }
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
-
-
   .carouselImage,
   .thumbnail,
   .navButton,
