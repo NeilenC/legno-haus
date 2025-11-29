@@ -90,9 +90,9 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Legno Haus "
+        title="Legno Haus"
         description="Construí de forma rápida, sustentable y accesible. Casas modulares de madera con diseño moderno, tecnología limpia y espacios pensados para disfrutar."
-        image="/logomarron.webp"
+        image="/logocompletomarron.webp"
         canonical={`${process.env.NEXT_PUBLIC_SITE_URL || 'http://legnohaus.com.ar'}/`}
       />
       <Head>
