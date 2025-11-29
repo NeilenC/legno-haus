@@ -21,8 +21,8 @@
 }
 
 .contenedor-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.19)),
-    url("/background-home.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.23)),
+    url("/background-img.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@
 
 .logo-leyenda {
   margin-top: 4rem;
-  font-weight:400;
+  font-weight: 400;
   opacity: 0.95;
   display: flex;
   flex-direction: column;
@@ -61,11 +61,10 @@
   font-weight: 700;
 }
 
-
-  .sub-leyenda{
-   font-weight: 300;
-    font-size: 30px;
-  }
+.sub-leyenda {
+  font-weight: 300;
+  font-size: 30px;
+}
 
 /* Botones CTA */
 .cta-section {
@@ -173,23 +172,21 @@
   }
 
   .contenedor-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/background-home-mobile.webp");
- 
-}
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.27)),
+      url("/mobile-ventanas.webp");
+  }
 }
 
 @media (max-width: 480px) {
-.logo-leyenda {
-        font-size: 35px;
-}
+  .logo-leyenda {
+    font-size: 35px;
+  }
   .leyenda {
     font-size: 1.8rem;
   }
 
-  .sub-leyenda{
-   font-weight: 400;
+  .sub-leyenda {
+    font-weight: 400;
     font-size: 20px;
   }
 
