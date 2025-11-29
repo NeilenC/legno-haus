@@ -21,8 +21,8 @@
 }
 
 .contenedor-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("/house-beach.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.19)),
+    url("/background-home.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -171,6 +171,13 @@
   .cta-button {
     width: 100%;
   }
+
+  .contenedor-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/background-home-mobile.webp");
+ 
+}
+
 }
 
 @media (max-width: 480px) {
